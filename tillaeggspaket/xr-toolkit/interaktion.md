@@ -26,7 +26,7 @@ När XR Origin-objektet skapas så ges båda VR-handkontrollerna de komponenter 
 
 Vid direct interaction måste VR-handkontrollen fysiskt röra vid målobjektet för att interaktion ska kunna se. Då kan man inte interagera med saker på distans utan måste vara nära dem.
 
-Lägg till en **XR Direct Interactor**-komponent till det VR-handkontroll-objektet som ska använda direct interaction.
+Lägg till en **XR Direct Interactor**-komponent till det VR-handkontroll-objektet som ska använda direct interaction. Lägg också till en Sphere Collider (Trigger); den kommer att användas för att känna av kollisionen mellan interactorn och objekten.
 
 ### Interaction layer mask
 

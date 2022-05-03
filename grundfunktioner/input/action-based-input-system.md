@@ -45,7 +45,7 @@ Används för att läsa av en InputActions värde. Datatypen anges mellan <>. Om
 
 ### Actions
 
-Varje InputAction har tre [Action](https://krank23.gitbook.io/csharp-ref/grundlaeggande/delegates#h.p\_qt3arehin8yt)\<InputAction.CallbackContext> -delegatvariabler. **Started** anropas normalt sett när input påbörjas och **Cancelled** när input avslutas, så de är lätta att använda för att koppla kod till när en knapp till exempel trycks ner (Started) eller släpps upp (Cancelled). **Performed** är mer komplicerad och när den anropas beror på vilken sorts InputAction det rör sig om (Value eler Button t.ex).
+Varje InputAction har tre [Action](https://krank23.gitbook.io/csharp-ref/grundlaeggande/delegates#h.p\_qt3arehin8yt)\<InputAction.CallbackContext> -delegatvariabler. **Started** anropas normalt sett när input påbörjas och **canceled** när input avslutas, så de är lätta att använda för att koppla kod till när en knapp till exempel trycks ner (started) eller släpps upp (canceled). **performed** är mer komplicerad och när den anropas beror på vilken sorts InputAction det rör sig om (Value eler Button t.ex).
 
 InputAction.CallbackContext-parametern innehåller information om den InputAction-händelse som anropade metoden, så man kan koppla samma metod till flera Actions och ändå göra skillnad i vad som händer.
 
@@ -53,8 +53,8 @@ InputAction.CallbackContext-parametern innehåller information om den InputActio
   void Awake()
   {
     fireAction.Enable();
-    fireAction.Started += OnFireStart;
-    fireAction.Cancelled += OnFireEnd;
+    fireAction.started += OnFireStart;
+    fireAction.canceled += OnFireEnd;
   }
   
   void OnFireStart(InputAction.CallbackContext context)
@@ -116,8 +116,8 @@ Metoden FindAction tar emot namnet på en InputAction som parameter och returner
     actionAsset.Enable();
     InputAction fireAction = actionAsset.FindAction("Fire");
     
-    fireAction.Started += OnFireStart;
-    fireAction.Cancelled += OnFireEnd;
+    fireAction.started += OnFireStart;
+    fireAction.canceled += OnFireEnd;
   }
 ```
 

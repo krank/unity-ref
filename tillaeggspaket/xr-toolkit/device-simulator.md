@@ -11,20 +11,21 @@ När man inte har tillgång till ett VR-headset medan man arbetar med ett VR-pro
 
 För att få vanliga WASD-kontroller och mouselook (inklueive E och Q för att åka uppåt/nedåt), tryck R och 3. Sedan kan du hålla nere höger musknapp för att flytta runt och styra simulatorn. Håll nere **vänster shift** för att styra vänster handkontroll och mellanslag för att styra den högra. Vänster musknapp simulerar avtryckaren och G-knappen simulerar greppknappen.
 
-| Välja enhet att styra     | Simulator                             |
-| ------------------------- | ------------------------------------- |
-| Hålla nere höger musknapp | Headset (tillfälligt)                 |
-| Hålla nere vänster shift  | Vänster VR-handkontroll (tillfälligt) |
-| Hålla nere mellanslag     | Höger VR-handkontroll (tillfälligt)   |
-| T                         | Vänster VR-handkontroll (toggle)      |
-| Y                         | Höger VR-handkontroll (toggle)        |
+| Välja enhet att styra     | Toggle | Simulator                             |
+| ------------------------- | ------ | ------------------------------------- |
+| Hålla nere höger musknapp |        | Headset                               |
+| Hålla nere vänster shift  |        | Vänster VR-handkontroll (tillfälligt) |
+| Hålla nere mellanslag     |        | Höger VR-handkontroll (tillfälligt)   |
+| T                         | Ja     | Vänster VR-handkontroll               |
+| Y                         | Ja     | Höger VR-handkontroll                 |
 
-| Styrning/rotation    | Simulator                              |
-| -------------------- | -------------------------------------- |
-| Flytta musen/scrolla | Flytta enhet i x/y/z-led               |
-| Mitten-musknappen    | Rotera enhet i x/y/z-led (tillfälligt) |
-| R                    | Byt plats på de två ovanstående        |
-| 3                    | Aktivera WASD+EQ för förflyttning      |
+| Styrning/rotation    | Toggle | Simulator                                      |
+| -------------------- | ------ | ---------------------------------------------- |
+| Flytta musen/scrolla |        | Flytta enhet i x/y/z-led                       |
+| Mitten-musknappen    |        | Rotera enhet i x/y/z-led                       |
+| R                    | Ja     | Byt plats på de två ovanstående                |
+| 1                    | Ja     | WASD+EQ för primary 2D Axis (Oculus: joystick) |
+| 3                    | Ja     | Aktivera WASD+EQ för förflyttning av enhet     |
 
 | Knappar          | Simulator                                           |
 | ---------------- | --------------------------------------------------- |

@@ -24,31 +24,96 @@ De har ett antal viktiga inställningar gemensamma:
 
 ## Avancerad setup
 
-* Mål: Bara plocka upp direkt med handen, teleportera med ray interactors
-* Interaction layers: Interactable/Teleportable
-  * Se till så alla interactable objekt finns på Interactable-lagret och alla teleportbara finns på Teleportable.
-* XRI Default Input Actions
-  * XRI LeftHand Locomotion->Teleport Select, Activate
-* Controller: Byt till direct interactors
-  * Lägg till Ray Interactor
-    * XR Controller
-      * Apply default
-      * Ändra Select Action till XRI LeftHand/RightHand Locomotion/Teleport Select
-      * Stäng av
-        * Enable Input Tracking
-        * Rotate Anchor Action
-        * Translate Anchor Action
-      * Ta bort Model Prefab (Markera, tryck delete)
-* Script: RayToggler
-  * RequireComponent XRRayInteractor
-  * InputActionReference activateReference
-  * XRRayInteractor reference
-  * bool isEnabled
-  * OnEnable/OnDisable
-    * lägg till ToggleRay från activateReference.action.started/canceled
-  * ToggleRay: isEnabled = context.control.IsPressed()
-  * LateUpdate: om interactors enable är olik isEnabled, gör dem lika
-  * Unity: Dra in LeftHand/RightHand Locomotion/Teleport Mode Activate
+Ett vanligt sätt att dela upp interaktionen i VR-projekt är att låta användaren plocka upp saker och interagera med miljön med sina egna händer ([Direct Interaction](interaktion.md#direct-interaction)), och använda VR-handkontrollens joystick för att teleportera ([Ray interaction](interaktion.md#ray-interaction)). Normalt kan man bara ha en sorts interactor per XR Controller.
+
+Dela upp scenens interagerbara objekt via **interaction layers**. Ett exempel på hur det kan göras är att skapa ett lager med namnet "intractables" och se till så att alla vanliga interagerbara objekt är på det lagret, men att inga av teleporterings-målen är det.
+
+De här instruktionerna kommer att använda två fördefinierade InputActions som finns i XRI Default Input Actions-asseten: **Locomotion/Teleport Mode Activate** och **Locomotion/Teleport Select**. Det finns separata Input Actions för vänster och höger hand.
+
+Normalt anropas Mode Activate av att spelaren drar styrspaken på VR-handkontrollen framåt, och Select anropas av att spelaren släpper styrspaken.
+
+![](<../../.gitbook/assets/image (7).png>)
+
+### XR-controllers
+
+Instruktionerna nedan beskriver hur Left Hand-controllern anpassas för det nya sättet att teleportera och interagera. Samma steg används för Right Hand; det enda som behöver ändras är vilket spelobjekt som modifieras och vilken hands kontroller och liknande som används.
+
+Markera XR Origin -> Camera Offset -> **LeftHand Controller**. Ta bort alla komponenter som har med Ray Interactorn att göra: XR Ray Interactor, XR Interactor Line Visual och Line Renderer.
+
+Lägg till en **Direct Interactor** och en **Sphere Collider**. Välj radie 0.1 för collidern och gör den till en trigger. Se till så att Direct Interaction har med Interactable-lagret i sin Layer mask.
+
+Högerklicka på LeftHand Controller och välj **XR -> Ray Interactor (Action-based)**. Det lägger till ett nytt objekt under LeftHand Controller, med standardnamnet Ray Interactor. Tryck Enter för att acceptera namnet, och se till så objektet är markerat.
+
+I objektets XR Controller, tryck på Preset-knappen (![](<../../.gitbook/assets/image (17).png>), mellan frågetecknet och de tre prickarna till höger om namnet). Välj **XRI Default Left Controller**.
+
+Gör följande ändringar:
+
+* Byt ut **Select Action** till **XRI LeftHand Locomotion/Teleport Select** (![](<../../.gitbook/assets/image (23).png>) för att få fram listan).
+* Kryssa ur **Enable Input Tracking**. Objektet kommer redan att flyttas genom att det ligger under den vanliga LeftHand-controllern.
+* Kryssa ur **Use Reference** för **Rotate Anchor Action** och **Translate Anchor Action**. Den här interactorn ska inte vrida och vända på objekt den interagerar med.
+* Se till så **Model Prefab** är tom.
+* Skapa och lägg till **RayToggler**-scriptet (se nedan), och dra in **XRI LeftHand Locomotion/Teleport Mode Activate** till dess Input Action-referens.
+
+### RayToggler
+
+```csharp
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit;
+
+public class RayToggler : MonoBehaviour
+{
+  [SerializeField]
+  private InputActionReference inputAction = null;
+
+  private XRRayInteractor interactor = null;
+  private bool isEnabled = false;
+
+  private void Awake()
+  {
+    interactor = GetComponent<XRRayInteractor>();
+  }
+
+  private void OnEnable()
+  {
+    inputAction.action.started += ToggleRay;
+    inputAction.action.canceled += ToggleRay;
+  }
+
+  private void OnDisable()
+  {
+    inputAction.action.started -= ToggleRay;
+    inputAction.action.canceled -= ToggleRay;
+  }
+
+  private void ToggleRay(InputAction.CallbackContext context)
+  {
+    isEnabled = context.control.IsPressed();
+  }
+
+  private void LateUpdate()
+  {
+    if (interactor.enabled != isEnabled)
+    {
+      interactor.enabled = isEnabled;
+    }
+  }
+}
+```
+
+
+
+
+
+* RequireComponent XRRayInteractor
+* InputActionReference activateReference
+* XRRayInteractor reference
+* bool isEnabled
+* OnEnable/OnDisable
+  * lägg till ToggleRay från activateReference.action.started/canceled
+* ToggleRay: isEnabled = context.control.IsPressed()
+* LateUpdate: om interactors enable är olik isEnabled, gör dem lika
+* Unity: Dra in LeftHand/RightHand Locomotion/Teleport Mode Activate
 
 
 

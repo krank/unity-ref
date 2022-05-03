@@ -1,4 +1,4 @@
-# XR Toolkit
+# XR Toolkit\*
 
 XR Toolkit är Unitys officiella sätt att arbeta med VR och liknande. Förhoppningsvis är det lite mer stabilt och långsiktigt än att köra med något fristående ramverk eller bibliotek, till exempel VRTK.
 
@@ -8,8 +8,6 @@ _De här instruktionerna bör fungera i Unity 2020.3 och senare, men bör funger
 
 * **VR-headset:** Den "hjälm" man sätter på huvudet för att se VR-världen.
 * **VR-handkontroll:** De fysiska apparater man håller i respektive hand för att styra saker i VR-världen.
-
-Knappar&#x20;
 
 ## Setup
 
@@ -51,7 +49,7 @@ I Unitys nya Input-system bygger allt på "actions", som i princip är händelse
 
 I din Input Action Manager, lägg till **XRI Default Input Actions** från Starter Assets.
 
-![](<../../.gitbook/assets/image (7).png>)
+![](<../../.gitbook/assets/image (7) (1).png>)
 
 
 

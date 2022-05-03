@@ -8,7 +8,7 @@ Om du tänkt ha någon form av interaktion i din scen så behöver också något
 
 ## Controllers
 
-VR-controllers kan ha två olika typer av interaktion: **ray interaction** och **direct interaction**. Varje handkontrolls-objekt kan normalt bara ha komponenter för en av dem, så om man vill kombinera behövs en workaround – se [teleportation ](teleportation.md)för ett exempel.
+XR-controllers kan ha två olika typer av interaktion: **ray interaction** och **direct interaction**. Varje handkontrolls-objekt kan normalt bara ha komponenter för en av dem, så om man vill kombinera behövs en workaround – se [teleportation ](teleportation.md)för ett exempel.
 
 Objekten som motsvarar dina VR-handkontroller finns i din XR Origin, under Camera Offset.
 
@@ -34,7 +34,7 @@ Oavsett om det gäller ray interaction eller direct interaction kan **interactio
 
 Både XR Ray Interactor och XR Direct Interactor-komponenterna har en **Layer Interaction Mask**-variabel.
 
-![](<../../.gitbook/assets/image (17).png>)
+![](<../../.gitbook/assets/image (17) (1).png>)
 
 Precis som med vanliga lager används Add Layer för att skapa nya lager. Se till så att bara de lager just denna interactor ska kunna interagera med är förkryssade. Detta blir extra viktigt om du vill ha olika sorters interactors för [teleportation ](teleportation.md)och att plocka upp föremål.
 

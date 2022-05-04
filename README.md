@@ -12,3 +12,7 @@ Detta är en hemsida med förenklade förklaringar och exempel relaterade till a
 Hela den här sidan finns [speglad på GitHub](https://github.com/krank/unity-ref) – där kan du skapa en buggrapport (issue) och beskriva problemet.
 
 Eller så kan du forka repositoriet, göra ändringen och sedan göra en pull request!
+
+## Videotips
+
+* [11 Things You (Probably) Didn't Know You Could Do In Unity](https://www.youtube.com/watch?v=mCKeSNdO\_S0)

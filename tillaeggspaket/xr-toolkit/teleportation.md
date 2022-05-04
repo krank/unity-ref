@@ -1,4 +1,4 @@
-# Teleportation\*
+# Teleportation
 
 ## Enkel setup
 
@@ -23,6 +23,8 @@ De har ett antal viktiga inställningar gemensamma:
 * **Teleportation Configuration** är en liten undermeny – den viktigaste här är nog Teleport Trigger, som är den händelse som får teleportationen att utföras. Här kan man bara välja mellan Select (greppknapp) och Activate (avtryckare).
 
 ## Avancerad setup
+
+Hela den här delen är inspirerad av den här videon: [https://www.youtube.com/watch?v=9dc1zq8eH54](https://www.youtube.com/watch?v=9dc1zq8eH54)
 
 Ett vanligt sätt att dela upp interaktionen i VR-projekt är att låta användaren plocka upp saker och interagera med miljön med sina egna händer ([Direct Interaction](interaktion.md#direct-interaction)), och använda VR-handkontrollens joystick för att teleportera ([Ray interaction](interaktion.md#ray-interaction)). Normalt kan man bara ha en sorts interactor per XR Controller.
 
@@ -56,11 +58,26 @@ Gör följande ändringar:
 
 ### RayToggler
 
+Nedan finns ett exempel på hur ett script för att växla huruvida en Ray Interactor är aktiv (enabled) beroende på en InputActions avfyrade actions.
+
+Scriptet har alltså en referens till en **InputActionReference**, som senare kopplas (enligt instruktionerna ovan) till XRI LeftHand Locomotion/Teleport Mode Activate eller dess högerhands-motsvarighet.
+
+Den har också en referens till den **XRRayInteractor**-komponent som ska aktiveras eller avaktiveras, och en bool-variabel som håller reda på ifall den ska vara aktiveras eller avaktiverad just nu. **RequireComponent** används ovanför klassdeklarationen för att säkerställa att det alltid finns en sådan komponent.
+
+När objektet skapas, hämtar det en referens till interactorn.
+
+När scriptet aktiveras (**OnEnable**) så läggs metoden **ToggleRay** till InputActionens started och canceled-metoder, och när det deaktiveras (**OnDisable**) så tas den bort därifrån. Det gör att det bara är när scriptet är aktivt som det har någon effekt – så teoretiskt sett kan man bygga andra script som i sin tur aktiverar eller stänger av det här scriptet.
+
+**ToggleRay**-metoden ser helt enkelt till så att **isEnabled**-variabeln har rätt värde beroende på om metoden avfyrades av att "knappen" trycktes ner (i det här fallet: att styrspaken dras framåt) eller av att den släpptes upp igen.
+
+Sedan i **LateUpdate**, så ser scriptet till så att XRRayInteractor-komponentens läge synkas med isEnabled-variabeln.
+
 ```csharp
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
 
+[RequireComponent(typeof(XRRayInteractor))]
 public class RayToggler : MonoBehaviour
 {
   [SerializeField]
@@ -100,21 +117,3 @@ public class RayToggler : MonoBehaviour
   }
 }
 ```
-
-
-
-
-
-* RequireComponent XRRayInteractor
-* InputActionReference activateReference
-* XRRayInteractor reference
-* bool isEnabled
-* OnEnable/OnDisable
-  * lägg till ToggleRay från activateReference.action.started/canceled
-* ToggleRay: isEnabled = context.control.IsPressed()
-* LateUpdate: om interactors enable är olik isEnabled, gör dem lika
-* Unity: Dra in LeftHand/RightHand Locomotion/Teleport Mode Activate
-
-
-
-[https://www.youtube.com/watch?v=eI1cgiz2JSw](https://www.youtube.com/watch?v=eI1cgiz2JSw)

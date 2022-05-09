@@ -9,6 +9,14 @@ Här finns färdiga projekt att utgå från, med all setup redan fixad. Välj pr
 
 ## Setup
 
+Skapa ett nytt 3D-projekt i Unity.
+
+{% hint style="warning" %}
+**OBS:** det finns en bugg i Unity 2020.3.32 som krånglar till det med MRTK och Hololens2. Använd en tidigare eller senare version.
+{% endhint %}
+
+Ladda ner och packa upp&#x20;
+
 * Skapa 3D-projekt i Unity
 * Ladda ner & packa upp Microsoft Mixed Reality Feature Tool
 *

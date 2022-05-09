@@ -40,7 +40,7 @@ Se till så att du lagt till XR Plugin Management-paketet i [Package Manager](..
 
 Gå till Edit -> Project Settings. Klicka på **XR Plugin Management**. Klicka på Android-fliken (den till höger) och kryssa i Oculus.
 
-![](<../../.gitbook/assets/image (4).png>)
+![](<../../.gitbook/assets/image (4) (1).png>)
 
 Gå till **Player**, även här Android-fliken, och gå ner till och expandera rubriken **Other Settings**.
 

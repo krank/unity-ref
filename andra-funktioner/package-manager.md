@@ -17,7 +17,7 @@ Unity utvecklar nya paket hela tiden, och en del av dem är experimentella – �
 
 För att komma åt dem, tryck på kugghjuls-ikonen (![](<../.gitbook/assets/image (10).png>)) till vänster om sökrutan i Package Manager och välj "Advanceed Project Settings". Kryssa i "Enable Preview Packages".
 
-![](<../.gitbook/assets/image (5).png>)
+![](<../.gitbook/assets/image (5) (1).png>)
 
 Nu kommer du att se fler paket i Unity Registry-listan. De som är experimentella är tydligt utmarkerade.
 

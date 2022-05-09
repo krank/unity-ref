@@ -33,27 +33,33 @@ Gå till Unity, och vänta på att de nya paketen ska laddas in. Unity kommer at
 
 ![](<../../.gitbook/assets/image (19).png>)
 
-När Unity startats om och projektet laddats in så startas MRTK Project Configurator. Ignorera den för tillfället och gå till menyn Mixed Reality -> Project -> Apply Recommended Project Settings for Hololens 2.
+När Unity startats om och projektet laddats in så startas **MRTK Project Configurator**. Ignorera den för tillfället och gå till menyn Mixed Reality -> Project -> Apply Recommended Project Settings for Hololens 2.
 
-När du gjort det kommer MRTK project Configurator att se annorlunda ut än tidigare. Klicka på "Apply".
+När du gjort det kommer MRTK project Configurator att se annorlunda ut än tidigare. Det kommer att stå något i stil med "**Important - for first time setup only**". Klicka Apply Settings och Next.
 
-* Skapa 3D-projekt i Unity
-* Ladda ner & packa upp Microsoft Mixed Reality Feature Tool
-*
+Nästa sida i Configurator låter dig välja vilka **Project Settings** och **UWP Capabilities** ditt projekt ska ha. Enklast är att bara lämna allt ikryssat. Tryck Next.
 
-## Simulering
+På nästa sida uppmanas du att importara **TMP Essentials**. TextMesh Pro är ett bra bibliotek för att få in text i Unityprojekt, som används av många MRTK-komponenter. Klicka på **Import TMP Essentials**.&#x20;
+
+Därefter säger MRTK project Configurator att den är klar. Klicka **Done**.
+
+Gå till Edit -> **Project Settings**. Klicka på **XR Plug-in Management**. Se om det finns någon varningstriangel bredvid OpenXR. Klicka i så fall på den. I rutan som dyker upp, tryck på "Fix All".
+
+![](<../../.gitbook/assets/image (26).png>)
 
 ## Scen-setup
 
-## Enkel interaktivitet
+Gå till Mixed Reality -> Toolkit -> **Add to Scene and Configure**. Nu läggs tre objekt till i scenen:'
 
-## Komplex interaktivitet
+* **MixedRealityToolkit:** Objektet som funkar som nav för hela systemet, sköter alla inställningar etc.
+* **MixedRealityPlayspace:** Objektet som sköter kameran – gör så att dess förflyttning blir relativt en viss punkt etc. Kameran här inne är utrustad med kod för att sköta t.ex. Gaze och att följa HoloLens-heaadsetets rörelser.
+* **MixedRealitySceneContent:** Objekt för att placera saker relativt användarens perspektiv i scenen.
 
-## Spatial awareness
+Markera MixedRealityToolkit-objektet. Se till så att **"DefaultHoloLens2ConfigurationProfile"** är vald i den översta dropdown-menyn i MixedRealityToolkit-komponenten.
 
-## Manuell setup
+![](<../../.gitbook/assets/image (25).png>)
 
-
+Nu är projektet och scenen redo!
 
 ## Länkar
 
@@ -61,31 +67,4 @@ När du gjort det kommer MRTK project Configurator att se annorlunda ut än tidi
 * [https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/](https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/)
 * [https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/spatial-mapping-in-unity](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/spatial-mapping-in-unity?tabs=mrtk)
 * [https://docs.microsoft.com/en-us/windows/mixed-reality/design/scene-understanding](https://docs.microsoft.com/en-us/windows/mixed-reality/design/scene-understanding)
-
-
-
-* Grundkoncept
-  * Pekare
-  * Luftklick
-* Setup
-  * Unity: projektet gjort i 2019.4
-    * Unity: MixedRealityToolkit
-      * Mixed Reality Feature Tool
-    * (Emulator)
-    * (Visual Studio, UWP och C++)
-* Scen-setup
-  * Mixed Reality Toolkit -> Add to scene and configure
-  * DefaultHololens1ConfigurationProfile
-* Konfigurationer
-  * Och konfigurationer i konfigurationer
-* Enkel interaktivitet
-  * Near Interaction Grabbable
-  * Object Manipulator
-* Mer komplicerad interaktivitet
-  * Klickbara objekt
-  * Händerna
-    * Transform
-* Spatial mapping
-* Simulering
-* Deployment
 

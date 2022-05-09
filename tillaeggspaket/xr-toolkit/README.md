@@ -23,7 +23,7 @@ För att förenkla för dig att bestämma vilka knappar på VR-kontrollerna som 
 
 Gå till Assets och navigera till Samples > XR Interaction Toolkit > 2.0.1 > Starter Assets.
 
-![](<../../.gitbook/assets/image (25).png>)
+![](<../../.gitbook/assets/image (25) (1).png>)
 
 Fem av sakerna i mappen är Presets. Klicka på var och ett av dem och på "Add to … default" högst upp i Inspector.
 

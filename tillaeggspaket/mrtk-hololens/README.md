@@ -15,7 +15,27 @@ Skapa ett nytt 3D-projekt i Unity.
 **OBS:** det finns en bugg i Unity 2020.3.32 som krånglar till det med MRTK och Hololens2. Använd en tidigare eller senare version.
 {% endhint %}
 
-Ladda ner och packa upp&#x20;
+Ladda ner och packa upp [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool).
+
+Kör filen **MixedRealityFeatureTool.exe** för att starta verktyget. Tryck på **Start** och välj mappen ditt Unityprojekt ligger i. Klicka på **Discover Features**.
+
+Kryssa i följande:   &#x20;
+
+* Mixed Reality Toolkit
+  * Mixed Reality Toolkit Foundation
+  * Mixed Reality Toolkit Standard Assets
+  * Mixed Reality Toolkit Tools
+  * (Mixed Reality Toolkit Examples – om du vill ha några exempelscener etc)
+* Platform Support
+  * Mixed Reality OpenXR Plugin
+
+Gå till Unity, och vänta på att de nya paketen ska laddas in. Unity kommer att fråga om editorn ska startas om och det nya input-systemet aktiveras. Tryck **Yes**.
+
+![](<../../.gitbook/assets/image (19).png>)
+
+När Unity startats om och projektet laddats in så startas MRTK Project Configurator. Ignorera den för tillfället och gå till menyn Mixed Reality -> Project -> Apply Recommended Project Settings for Hololens 2.
+
+När du gjort det kommer MRTK project Configurator att se annorlunda ut än tidigare. Klicka på "Apply".
 
 * Skapa 3D-projekt i Unity
 * Ladda ner & packa upp Microsoft Mixed Reality Feature Tool

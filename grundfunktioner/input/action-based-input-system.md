@@ -74,7 +74,7 @@ En InputAction asset samlar ett flertal ActionAssets på ett och samma ställe. 
 
 En InputAction asset är tänkt att samla en spelares inputs. Har man flera spelare, så skapar man en asset per spelare för att hålla isär deras kontroller.
 
-![](<../../.gitbook/assets/image (19).png>)
+![](<../../.gitbook/assets/image (19) (1).png>)
 
 ### Action Maps
 

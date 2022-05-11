@@ -22,6 +22,7 @@
 * [Fysik (2D och 3D)\*](grundfunktioner/fysik-2d-och-3d.md)
 * [UI och Canvas\*](grundfunktioner/ui-och-canvas.md)
 * [Importera grafik\*](grundfunktioner/importera-grafik.md)
+* [Unity Events\*](grundfunktioner/unity-events.md)
 
 ## Andra funktioner
 

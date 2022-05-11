@@ -51,4 +51,5 @@
   * [Konfigurering](tillaeggspaket/mrtk-hololens/konfigurering.md)
   * [Interaktion\*](tillaeggspaket/mrtk-hololens/interaktion.md)
   * [Spatial awareness\*](tillaeggspaket/mrtk-hololens/spatial-awareness.md)
+  * [Röststyrning\*](tillaeggspaket/mrtk-hololens/roeststyrning.md)
   * [Deployment\*](tillaeggspaket/mrtk-hololens/deployment.md)

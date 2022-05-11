@@ -1,4 +1,4 @@
-# MRTK (HoloLens 2)\*
+# MRTK (HoloLens 2)
 
 ## Färdigt grundprojekt
 
@@ -58,6 +58,8 @@ Gå till Mixed Reality -> Toolkit -> **Add to Scene and Configure**. Nu läggs t
 Markera MixedRealityToolkit-objektet. Se till så att **"DefaultHoloLens2ConfigurationProfile"** är vald i den översta dropdown-menyn i MixedRealityToolkit-komponenten.
 
 ![](<../../.gitbook/assets/image (25).png>)
+
+Gå till Mixed Reality -> Project -> **Apply recommended scene settings for Hololens 2**.
 
 Nu är projektet och scenen redo!
 

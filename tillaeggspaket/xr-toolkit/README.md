@@ -1,4 +1,4 @@
-# XR Toolkit\*
+# XR Toolkit
 
 XR Toolkit är Unitys officiella sätt att arbeta med VR och liknande. Förhoppningsvis är det lite mer stabilt och långsiktigt än att köra med något fristående ramverk eller bibliotek, till exempel VRTK.
 
@@ -57,7 +57,7 @@ I din Input Action Manager, lägg till **XRI Default Input Actions** från Start
 
 Om du vill kunna se var dina händer/kontroller är i VR så måste du själv bestämma hur de ska se ut. Du kan importera 3D-modeller du själv skapat eller hittat i Asset Store, eller bara skapa enkla lådor själv. Vad som helst fungerar så länge du kan skapa [prefabs ](../../begrepp.md#prefab)av dem.
 
-![Ett exempel på väldigt enkel prefab](<../../.gitbook/assets/image (11).png>)
+![Ett exempel på väldigt enkel prefab](<../../.gitbook/assets/image (11) (1).png>)
 
 Du kan använda samma prefab för både vänster och höger VR-controller, eller ha olika.
 

@@ -4,7 +4,7 @@ För utveckling utan HoloLens är det praktiskt med Unitys inbyggda HoloLens-sim
 
 Den är automatiskt tillgänglig i scener som förberetts för HoloLens-utveckling. Den aktiveras tillsammans med Play mode.
 
-![](<../../.gitbook/assets/image (5).png>)
+![](<../../.gitbook/assets/image (5) (1).png>)
 
 ## Huvudet
 

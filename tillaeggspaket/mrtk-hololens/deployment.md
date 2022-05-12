@@ -13,8 +13,15 @@ Dessutom behövs **Universal Windows Platform support** i Unity – **ytterligar
 * Player Settings -> OpenXR -> UWP -> Interaction Profiles -> Microsoft Hand Interaction Profile
   * OpenXR Feature Groups -> Hand Tracking
 * Build -> till egen mapp (skapa en!)
+* Windows: Developer Mode
 * När processen är klar: Gå till mappen, öppna SLN-filen
-* (köra projektet)
+* Universal Windows-projektet -> Högerklick, Set as Startup Project
+* Release, ARM64, Remote machine
+* Project -> Properties -> Debugging -> Machine Name (IP)
+* Build -> Deploy Solution
+* \~2min för att kompilera
+* PIN
+* \~3-5min för att överföra
 
 ### Hololens 2-emulator
 

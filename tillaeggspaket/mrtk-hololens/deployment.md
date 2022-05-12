@@ -23,6 +23,10 @@ Dessutom behövs **Universal Windows Platform support** i Unity – **ytterligar
 * PIN
 * \~3-5min för att överföra
 
+[https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/build-and-deploy-to-hololens](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/build-and-deploy-to-hololens)
+
+[https://docs.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2)
+
 ### Hololens 2-emulator
 
 Har man inte en riktig HoloLens 2 men vill pröva mer "på riktigt" än i Unitys simulering, finns [Hololens 2-emulatorn](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator). Den kräver **c:a 12 gb** ledigt utrymme. Observera att Hyper-V måste vara aktiverat i Windows för att den ska fungera.

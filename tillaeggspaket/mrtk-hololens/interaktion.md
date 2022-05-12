@@ -1,4 +1,4 @@
-# Interaktion\*
+# Interaktion
 
 ## Object Manipulator
 
@@ -18,5 +18,10 @@ Ett manipulerbart objekt som ges en Near Interaction Grabbable-komponent kan int
 
 Objekt som inte ska kunna manipuleras utan bara reagera med kod på att vidröras, klickas på etc kan ges en **Interactable**-komponent.
 
-* Interactable
-  * Reagera på handlingar (t.ex fokus, klick
+**Input Actions** är vilken action komponenten ska reagera på.
+
+**Voice Command** är vilket, om något, [röstkommando ](roeststyrning.md)den ska reagera på.
+
+Under **Events** finns sedan framför allt **OnClick**, som är ett helt vanligt [Unity Event](../../grundfunktioner/unity-events.md) som kan kopplas till ett eller flera scripts och metoder.
+
+Under **Receivers** går det att lägga till fler sorters events som interactable-objektet ska ta emot. Till exempel kan en InteractableOnFocusReceiver göra det möjligt att koppla script och metoder till när användaren markerar eller tittar på ett objekt.

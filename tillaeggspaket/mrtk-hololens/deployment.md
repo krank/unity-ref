@@ -5,7 +5,7 @@
 För att kunna kompilera och föra över projekt till en HoloLens 2 eller emulatorn, behövs Visual Studio 2019 eller 2022. De tar en hel del utrymme: räkna med **mellan 18.5 och 20.5 gb**!
 
 * Behövs: C++ Desktop och UWP
-* Obs: ta med C++ v142 i UWP-paketet.
+* Obs: ta med C++ v143 i UWP-paketet.
 
 Dessutom behövs **Universal Windows Platform support** i Unity – **ytterligare c:a 2 gb**.
 

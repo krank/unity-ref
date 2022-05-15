@@ -11,7 +11,7 @@ Dessutom behövs **Universal Windows Platform support** i Unity – **ytterligar
 
 * Build Settings -> Universal Windows Platform
 * Player Settings -> OpenXR -> UWP -> Interaction Profiles -> Microsoft Hand Interaction Profile
-  * OpenXR Feature Groups -> Hand Tracking
+* OpenXR Feature Groups -> Hand Tracking
 * Build -> till egen mapp (skapa en!)
 * Windows: Developer Mode
 * När processen är klar: Gå till mappen, öppna SLN-filen

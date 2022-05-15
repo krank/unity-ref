@@ -2,7 +2,13 @@
 
 ## Färdigt grundprojekt
 
-Här finns färdiga projekt att utgå från, med all setup redan fixad. Välj projektet som matchar din Unity-version:
+Här finns färdiga projekt att utgå från, med all setup redan fixad. Välj projektet som matchar din Unity- och Hololensversion:
+
+**Hololens 2:**
+
+* [MRTK\_BASE\_HL2\_2020](https://github.com/mikael-bergstrom-ntisthlm/MRTK\_BASE\_HL2\_2020)
+
+**Hololens 1:**
 
 * [Unity 2020.3.23](https://github.com/mikael-bergstrom-ntisthlm/MRTK-base-2020) (MRTK 2.7.2, OpenXR)
 * [Unity 2019.4.32](https://github.com/mikael-bergstrom-ntisthlm/MRTK-base-2019) (MRTK 2.7.2, Legacy XR)

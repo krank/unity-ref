@@ -8,6 +8,10 @@ Material:
 
 ## Förberedelser
 
+{% hint style="danger" %}
+**VIKTIGT:** Om projektet innehåller en [Device Simulator](device-simulator.md) – ta bort den eller deaktivera den! Om den är aktiv i scenen kommer ingenting att fungera när projektet körs i Oculusen.
+{% endhint %}
+
 ### Oculus Quest 2
 
 Starta headsetet.

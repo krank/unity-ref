@@ -33,7 +33,7 @@ Gå till Unity, och vänta på att de nya paketen ska laddas in. Unity kommer at
 
 ![](<../../.gitbook/assets/image (19).png>)
 
-När Unity startats om och projektet laddats in så startas **MRTK Project Configurator**. Ignorera den för tillfället och gå till menyn Mixed Reality -> Project -> Apply Recommended Project Settings for Hololens 2.
+När Unity startats om och projektet laddats in så startas **MRTK Project Configurator**. Ignorera den för tillfället och gå till menyn Mixed Reality → Project → Apply Recommended Project Settings for Hololens 2.
 
 När du gjort det kommer MRTK project Configurator att se annorlunda ut än tidigare. Det kommer att stå något i stil med "**Important - for first time setup only**". Klicka Apply Settings och Next.
 
@@ -43,13 +43,13 @@ På nästa sida uppmanas du att importara **TMP Essentials**. TextMesh Pro är e
 
 Därefter säger MRTK project Configurator att den är klar. Klicka **Done**.
 
-Gå till Edit -> **Project Settings**. Klicka på **XR Plug-in Management**. Se om det finns någon varningstriangel bredvid OpenXR. Klicka i så fall på den. I rutan som dyker upp, tryck på "Fix All".
+Gå till Edit → **Project Settings**. Klicka på **XR Plug-in Management**. Se om det finns någon varningstriangel bredvid OpenXR. Klicka i så fall på den. I rutan som dyker upp, tryck på "Fix All".
 
 ![](<../../.gitbook/assets/image (26).png>)
 
 ## Scen-setup
 
-Gå till Mixed Reality -> Toolkit -> **Add to Scene and Configure**. Nu läggs tre objekt till i scenen:'
+Gå till Mixed Reality → Toolkit → **Add to Scene and Configure**. Nu läggs tre objekt till i scenen:'
 
 * **MixedRealityToolkit:** Objektet som funkar som nav för hela systemet, sköter alla inställningar etc.
 * **MixedRealityPlayspace:** Objektet som sköter kameran – gör så att dess förflyttning blir relativt en viss punkt etc. Kameran här inne är utrustad med kod för att sköta t.ex. Gaze och att följa HoloLens-heaadsetets rörelser.
@@ -59,7 +59,7 @@ Markera MixedRealityToolkit-objektet. Se till så att **"DefaultHoloLens2Configu
 
 ![](<../../.gitbook/assets/image (25).png>)
 
-Gå till Mixed Reality -> Project -> **Apply recommended scene settings for Hololens 2**.
+Gå till Mixed Reality → Project → **Apply recommended scene settings for Hololens 2**.
 
 Nu är projektet och scenen redo!
 

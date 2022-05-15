@@ -1,10 +1,12 @@
-# Installation & setup
+# Installation & setup\*
 
 * Ladda ner och installera [Unity Hub](https://unity3d.com/get-unity/download).
   * Följ instruktionerna – skapa ett Unity-konto om du inte redan har ett, skaffa en Unity-licens (välj gratislicensen)
   * Via Unity Hub, installera en version av Unity. 2020-versionerna är de mest stabila. Du kan klicka ur alla valbara extragrejer, du behöver generellt bara grund-Unity.
 * Ladda ner och installera [.NET Framework SDK 4.7.1](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net471-developer-pack-offline-installer). Det behövs för att kodkompletteringen i Visual Studio Code ska fungera.
   * Om du fortfarande inte får kodkomplettering: Testa att avinstallera eller uppdatera Visual Studio om du har det installerat.
+
+## Andra plattformar
 
 ## Nytt projekt
 
@@ -18,3 +20,5 @@
 * (Gå till File → Build Settings och ändra Architecture till x86\_64.)
 
 ## Unity och Git
+
+(Kommer snart)

@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Unity snabbreferens](README.md)
-* [Installation & setup](installation-and-setup.md)
+* [Installation & setup\*](installation-and-setup.md)
 * [Ett Unityprojekts uppbyggnad\*](ett-unityprojekts-uppbyggnad.md)
 * [Begrepp](begrepp.md)
 * [Datatyper och synlighet](datatyper-och-synlighet.md)
@@ -9,6 +9,7 @@
 * [Scener](scener.md)
 * [MonoBehavior](monobehavior.md)
 * [Lager och taggar](lager-och-taggar.md)
+* [Kompilering och körning\*](kompilering-och-koerning.md)
 * [Knappar och axlar](knappar-och-axlar.md)
 
 ## Grundfunktioner

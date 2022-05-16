@@ -1,4 +1,4 @@
-# Installation & setup\*
+# Installation & setup
 
 * Ladda ner och installera [Unity Hub](https://unity3d.com/get-unity/download).
   * Följ instruktionerna – skapa ett Unity-konto om du inte redan har ett, skaffa en Unity-licens (välj gratislicensen)
@@ -6,12 +6,11 @@
 * Ladda ner och installera [.NET Framework SDK 4.7.1](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net471-developer-pack-offline-installer). Det behövs för att kodkompletteringen i Visual Studio Code ska fungera.
   * Om du fortfarande inte får kodkomplettering: Testa att avinstallera eller uppdatera Visual Studio om du har det installerat.
 
-## Andra plattformar
-
 ## Nytt projekt
 
 * Välj själv den template (2D, 3D etc) som bäst matchar spelet du tänker bygga.
-* När projektet skapats, gå till **Edit**, **Preferences** och **External Tools**. Välj **Visual Studio Code** som **External Script Editor**.
+* Kan behövas första gången på ny dator / Unityversion:
+  * När projektet skapats, gå till **Edit →** **Preferences** och **External Tools**. Välj **Visual Studio Code** som **External Script Editor**.
   * Se till så att _åtminstone_ följande är ikryssade under "Generate .csproj files for":
     * Embedded packages
     * Local packages
@@ -21,4 +20,7 @@
 
 ## Unity och Git
 
-(Kommer snart)
+Ett enkelt sätt att använda Git med Unity är Visual Studio Codes inbyggda Git-klient.
+
+* Högerklicka i Assets och välj **"Open C# project"**.
+* Följ instruktionerna för att skapa ett Git-repository [här](https://krank23.gitbook.io/csharp-ref/lathund-skapa-projekt), men lägg till en **gitignore** för **Unity** istället för Visual Studio.

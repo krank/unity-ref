@@ -1,6 +1,18 @@
 # Fysik (2D och 3D)\*
 
-## RigidBody
+I Unity är det fysikmotorn som sköter gravitation och andra fysikaliska krafter, och hindrar objekt från att clippa in i varandra. Den sköter dessutom andra kollisioner – sådana som inte har med fysikaliska krafter att göra alls, utan där det bara finns anledning att avgöra ifall två objekt överlappar varandra.
+
+Det finns två helt separata fysikmotorer – 2D och 3D. Båda kan finnas med i samma projekt, men de kan inte påverka eller känna av samma objekt.
+
+## RigidBody/RigidBody2D
+
+RigidBody-komponenterna är kärnan i fysikmotorn. Bara objekt med en RigidBody omfattas av fysikmotorns simuleringar. Undantaget är objekt som kolliderar med dem – de påverkas också, om de har rätt sorts collider.
+
+TL,DR: för att ett objekt ska ges **gravitation** etc behöver det en RigidBody. För att en **kollision** ska kunna avläsas med kod (eller märkas av i fysikmotorn) behöver minst ett av de inblandade objekten ha en RigidBody.
+
+### Velocity
+
+### AddForce
 
 ## Fysikuppdatering
 

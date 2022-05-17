@@ -8,7 +8,7 @@
 * [Begrepp](begrepp.md)
 * [Datatyper och synlighet](datatyper-och-synlighet.md)
 * [Komponenter](komponenter.md)
-* [Prefabs och instanser\*](prefabs-och-instanser.md)
+* [Prefabs och instanser](prefabs-och-instanser.md)
 * [Scener](scener.md)
 * [MonoBehavior](monobehavior.md)
 * [Lager och taggar](lager-och-taggar.md)

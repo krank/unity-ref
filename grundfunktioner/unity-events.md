@@ -8,7 +8,7 @@ Många system i Unity använder Events som ett sätt att bygga logik direkt i ed
 
 ## I editorn
 
-![](<../.gitbook/assets/image (5).png>)
+![](<../.gitbook/assets/image (5) (1).png>)
 
 Bilden ovan visar tre exempel på UnityEvents som visas i Unity-editorn. Det första eventet har ännu inga metoder kopplade till sig – listan är tom. Listan utökas genom knappen +.
 

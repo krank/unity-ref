@@ -4,7 +4,7 @@ I Unity är det fysikmotorn som sköter gravitation och andra fysikaliska krafte
 
 Det finns två helt separata fysikmotorer – 2D och 3D. Båda kan finnas med i samma projekt, men de kan inte påverka eller känna av samma objekt.
 
-## RigidBody/RigidBody2D
+## Rigidbody/Rigidbody2D
 
 RigidBody-komponenterna är kärnan i fysikmotorn. Bara objekt med en RigidBody omfattas av fysikmotorns simuleringar. Undantaget är objekt som kolliderar med dem – de påverkas också, om de har rätt sorts collider.
 
@@ -12,7 +12,18 @@ TL,DR: för att ett objekt ska ges **gravitation** etc behöver det en RigidBody
 
 ### Velocity
 
-### AddForce
+Velocity är en propertobjektets nuvarande hastighet – hur mycket dess position förändras över tid. Man bör vara försiktig med att modifiera den direkt.
+
+```csharp
+void Update()
+{
+  RigidBody rigidbody = GetComponent<RigidBody>();
+  
+  float xMovement = rigidbody.Velocity.x;
+}
+```
+
+### AddForce()
 
 ## Fysikuppdatering
 

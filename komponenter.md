@@ -9,6 +9,29 @@ Några exempel på vanliga komponenter:
 * **RigidBody, RigidBody2D:** Används för att tala om för fysikmotorn att objektet ska omfattas av fysiksimuleringen – man kan t.ex. ange objektets massa och via kod addera kraft i valfri riktning med hjälp av objektets rigidbody-komponent.
 * **MeshRenderer, SpriteRenderer:** Används för att ge objektet ett utseende – MeshRenderer använder en 3d-modell som renderas ut på skärmen medan SpriteRenderer använder en 2d-bild.
 
+## Scriptkomponenter
+
+I princip all kod som skrivs i Unityprojekt skrivs i script-komponenter. För att scriptkomponentens kod ska köras behöver normalt sett komponenten sitta på ett spelobjekt som är aktivt i scenen.
+
+För att skapa en scriptkomponent:
+
+* Högerklicka i Assets och välj Create → C# Script eller
+* Klicka på Add Component längst ner i Inspectorn på ett spelobjekt.
+
+Normalt sett ärver alla scriptkomponenter från [MonoBehavior](monobehavior.md).
+
+## GetComponent<>()
+
+Hämtar första bästa komponent av angiven typ. Returnerar `null` om det inte finns någon.
+
+```csharp
+void Start()
+{
+  Transform tForm = this.GetComponent<Transform>();
+  Rigidbody2D rigidBody = this.GetComponent<Rigidbody2D>();
+}
+```
+
 ## Komponentmenyn
 
 Klicka på ![](<.gitbook/assets/image (20).png>) till höger om komponentens namn för att ta fram komponentmenyn.

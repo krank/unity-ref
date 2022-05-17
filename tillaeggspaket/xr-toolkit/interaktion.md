@@ -12,7 +12,7 @@ XR-controllers kan ha två olika typer av interaktion: **ray interaction** och *
 
 Objekten som motsvarar dina VR-handkontroller finns i din XR Origin, under Camera Offset.
 
-![](<../../.gitbook/assets/image (20).png>)
+![](<../../.gitbook/assets/image (20) (1).png>)
 
 ### Ray interaction
 
@@ -66,5 +66,5 @@ I listan är det mesta ganska självförklarande, men det finns tre viktiga begr
 
 I exemplet nedan aktiveras metoden **DoSomething** i **CapsuleController**-scriptet som finns i objektet **Capsule** när spelaren **markerat** objektet med antingen sin stråle (ray interactor) eller sin VR-handkontroll (direct interactor)
 
-![](<../../.gitbook/assets/image (13).png>)
+![](<../../.gitbook/assets/image (13) (1).png>)
 

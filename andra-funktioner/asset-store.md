@@ -1,6 +1,6 @@
 # Asset Store
 
-[Unity Asset Store](https://assetstore.unity.com) är en onlinebutik där man kan köpa och ladda ner olika assets, till exempel 3D-modeller, animationer, bibliotek av färdigskriven kod och mycket annat.
+[Unity Asset Store](https://assetstore.unity.com/) är en onlinebutik där man kan köpa och ladda ner olika assets, till exempel 3D-modeller, animationer, bibliotek av färdigskriven kod och mycket annat.
 
 I nyare versioner av Unity ser flödet för Asset Store oftast ut såhär:
 

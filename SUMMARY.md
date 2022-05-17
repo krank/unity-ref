@@ -4,14 +4,14 @@
 * [Installation & setup](installation-and-setup.md)
 * [Kompilera och distribuera\*](kompilera-och-distribuera.md)
 * [Andra plattformar](andra-plattformar.md)
-* [Ett Unityprojekts uppbyggnad\*](ett-unityprojekts-uppbyggnad.md)
+* [Ett Unityprojekts uppbyggnad](ett-unityprojekts-uppbyggnad.md)
 * [Begrepp](begrepp.md)
 * [Datatyper och synlighet](datatyper-och-synlighet.md)
 * [Komponenter](komponenter.md)
+* [Prefabs och instanser\*](prefabs-och-instanser.md)
 * [Scener](scener.md)
 * [MonoBehavior](monobehavior.md)
 * [Lager och taggar](lager-och-taggar.md)
-* [Kompilering och körning\*](kompilering-och-koerning.md)
 * [Knappar och axlar](knappar-och-axlar.md)
 
 ## Grundfunktioner

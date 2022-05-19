@@ -1,5 +1,5 @@
 # Importera grafik\*
 
-Pixelart
+Pixelart och texturer
 
 3D-modeller

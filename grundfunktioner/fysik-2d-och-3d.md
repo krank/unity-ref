@@ -42,7 +42,7 @@ Används för att applicera ny kraft till en RigidBody, och därmed påverka des
 
 Unity-enheter fungerar här som meter, och Force-värdet anges i newtons eller newtonsekunder.
 
-```
+```csharp
 // Applicera 700 newtons i riktning framåt.
 rigidBody.AddForce(Vector3.forward * 700);
 
@@ -61,12 +61,19 @@ rigidBody.AddForce(Vector3.right * 900, ForceMode.Impulse);
 **OBS:** För Rigidbody2D-komponenter används ForceMode2D istället för ForceMode.
 {% endhint %}
 
-## Fysikuppdatering
-
 ## Colliders
 
-* BoxCollider2D
-* CapsuleCollider2D
+En collider är en "hit box" som används istället för ett spelobjekts faktiska geometri för att se om det kolliderar med något. För att en kollision mellan två objekt ska registreras av fysikmotorn behöver båda ha en collider.
+
+BoxCollider
+
+CapsuleCollider
+
+### Triggers
+
+En collider som är markerad som "Is Trigger" agerar inte som ett hinder för kollisioner, men kan användas för att genom kod känna av ifall ett annat objekts collider överlappar den.
+
+**Exempel:** När avataren kliver över tröskeln så går larmet och monster instansieras i rummet.
 
 ## 2D-metoder
 

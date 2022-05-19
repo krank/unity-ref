@@ -26,6 +26,7 @@
 * [UI och Canvas\*](grundfunktioner/ui-och-canvas.md)
 * [Importera grafik\*](grundfunktioner/importera-grafik.md)
 * [Unity Events\*](grundfunktioner/unity-events.md)
+* [Animationer\*](grundfunktioner/animationer.md)
 
 ## Andra funktioner
 

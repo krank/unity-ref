@@ -15,6 +15,16 @@ Utgå från ett vanligt 3D-projekt.
 
 Gå till [Package manager](../../andra-funktioner/package-manager.md) och installera paketen "XR Plugin Management" och "XR Interaction Toolkit". Tacka ja ifall Unity frågar om du vill byta till det nya input-systemet.
 
+{% hint style="info" %}
+Om XR Interaction Toolkit inte finns i Unity Registry-listan, öppna filen "manifest.json" i projektets Packages-mapp, och lägg till detta i listan:
+
+`"com.unity.xr.interaction.toolkit": "2.1.1",`
+
+Ta bort det sista kommatecknet om du lägger till det längst ner.
+
+Återgå sedan till Unity, så bör paketet installeras.
+{% endhint %}
+
 Under "XR Interaction Toolkit" finns två "Samples", "Starter Assets" och "XR Device Simulator". Lägg till åtminstone Starter Assets. XR Device Simulator lägger du till [om du tänker utveckla utan tillgång till ett VR-headset](device-simulator.md).
 
 ### Starter assets

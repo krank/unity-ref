@@ -7,6 +7,25 @@ När man inte har tillgång till ett VR-headset medan man arbetar med ett VR-pro
 1. Om du inte gjort det redan, gå till [Package Manager](../../andra-funktioner/package-manager.md) och **XR Interaction Toolkit**-paketet. Klicka in under Samples och importera **XR Device Simulator**.
 2. Gå till din Assets och till mappen Samples > XR Interaction Toolkit > 2.0.1 > XR Device Simulator. Dra in **XR Device Simulator**-prefaben till din scen.
 
+### I Unity 2021.3, med InputSystem 1.4.0+
+
+Det finns en bug som gör att WASD-styrning av simulatorn inte fungerar. Som en workaround, lägg följande script på ett GameObject någonstans i scenen.
+
+{% code title="ShortcutDisabler.cs" lineNumbers="true" %}
+```csharp
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+[DefaultExecutionOrder(-30000)]
+public class ShortcutDisabler : MonoBehaviour
+{
+  private void Awake() {
+    InputSystem.settings.SetInternalFeatureFlag("DISABLE_SHORTCUT_SUPPORT", true);
+  }
+}
+```
+{% endcode %}
+
 ## Kontroller
 
 För att få vanliga WASD-kontroller och mouselook (inklueive E och Q för att åka uppåt/nedåt), tryck R och 3. Sedan kan du hålla nere höger musknapp för att flytta runt och styra simulatorn. Håll nere **vänster shift** för att styra vänster handkontroll och mellanslag för att styra den högra. Vänster musknapp simulerar avtryckaren och G-knappen simulerar greppknappen.

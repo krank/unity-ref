@@ -45,7 +45,13 @@ Installera modulen **"WebGL Build Support"** (kräver c:a 1.6gb).
 
 I Unityprojekt som ska exporteras till Android, gå till **File → Build Settings**, markera **WebGL** och klicka **Switch platform**.
 
-(Mer kommer…)
+Klicka på Build och välj eller skapa en mapp som vanligt. Det du får i den mappen är en index.html-fil som laddar in och visar spelet.
+
+{% hint style="info" %}
+**OBSERVERA:** De flesta webbläsare blockerar lokal inladdning av Unityprojekt, så det går inte bara att dubbelklicka på index.html-filen som genereras och öppna i en webbläsare. För att testa lokalt: Använd "Build and Run" inuti Unity.
+{% endhint %}
+
+Innehållet i mappen kan sedan publiceras på valfri webbserver, eller t.ex. laddas upp och publiceras på Github Pages.
 
 ## UWP
 

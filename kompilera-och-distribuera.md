@@ -33,11 +33,19 @@ Kryssa i de moduler du vill ha och sedan Install. Se till att kryssa ur Visual S
 
 Installera modulerna **"Android Build Support"**, **"Android SDK & NDK Tools"** och **"OpenJDK"**.
 
-I Unityprojekt som ska exporteras till Android, gå till F**ile → Build Settings**, markera **Android** och klicka **Switch platform**.
+I Unityprojekt som ska exporteras till Android, gå till **File → Build Settings**, markera **Android** och klicka **Switch platform**.
 
-Koppla in en Android-enhet som har USB Debugging aktiverat, och klicka **Refresh** för att få enheten att dyka upp i listan. Använd Build and run för att build:a&#x20;
+Koppla in en Android-enhet som har USB Debugging aktiverat, och klicka **Refresh** för att få enheten att dyka upp i listan.
 
 När man build:ar till Android får man en **APK-fil**, som sedan förs över till Androidenheten och installeras. APK är ett universellt format för Android-appar och kan användas för att installera appar på alla Androidenheter som tillåter installation från "okända källor".
+
+## WebGL
+
+Installera modulen **"WebGL Build Support"** (kräver c:a 1.6gb).
+
+I Unityprojekt som ska exporteras till Android, gå till **File → Build Settings**, markera **WebGL** och klicka **Switch platform**.
+
+(Mer kommer…)
 
 ## UWP
 

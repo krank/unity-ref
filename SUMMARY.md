@@ -3,7 +3,6 @@
 * [Unity snabbreferens](README.md)
 * [Installation & setup](installation-and-setup.md)
 * [Kompilera och distribuera\*](kompilera-och-distribuera.md)
-* [Andra plattformar](andra-plattformar.md)
 * [Ett Unityprojekts uppbyggnad](ett-unityprojekts-uppbyggnad.md)
 * [Begrepp](begrepp.md)
 * [Datatyper och synlighet](datatyper-och-synlighet.md)

@@ -1,2 +1,0 @@
-# Andra plattformar
-

@@ -55,4 +55,8 @@ Innehållet i mappen kan sedan publiceras på valfri webbserver, eller t.ex. lad
 
 ## UWP
 
-(Kommer…)
+Installera modulen **"Universal Windows Platform Build Support"** (c:a 2gb). Du kommer också att behöva ha Microsoft Visual Studio installerat, så installera det antingen från dess hemsida eller genom att kryssa i modulen **"Microsoft Visual Studio Community 2019"** (c:a 1.3gb).
+
+Får du sedan felmeddelanden, dubbelkolla i Visual Studio Installer så att "Desktop Development med C++" är installerat.
+
+(Mer kommer…)

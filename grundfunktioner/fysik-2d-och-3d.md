@@ -65,9 +65,9 @@ rigidBody.AddForce(Vector3.right * 900, ForceMode.Impulse);
 
 En collider är en "hit box" som används istället för ett spelobjekts faktiska geometri för att se om det kolliderar med något. För att en kollision mellan två objekt ska registreras av fysikmotorn behöver båda ha en collider.
 
-BoxCollider
+### BoxCollider
 
-CapsuleCollider
+### CapsuleCollider
 
 ### Triggers
 
@@ -75,16 +75,54 @@ En collider som är markerad som "Is Trigger" agerar inte som ett hinder för ko
 
 **Exempel:** När avataren kliver över tröskeln så går larmet och monster instansieras i rummet.
 
-## 2D-metoder
+## Kollisionsmetoder
 
-### OnTriggerEnter2D()
-
-### OnCollisionEnter2D()
-
-## 3D-metoder
+Skrivs dessa metoder in i script som är knutna till ett objekt med en RididBody/RigidBody2D så anropas de automatiskt när en kollision inträffar.
 
 ### OnTriggerEnter()
 
+En metod som anropas ifall en collider kolliderar med någon av det här objektets trigger colliders.
+
+```csharp
+void OnTriggerEnter(Collider other)
+{
+  // other är det andra objektets collider 
+}
+```
+
+### OnCollisionEnter()
+
+En metod som anropas ifall en collider kolliderar med någon av det här objektets vanliga colliders.
+
+```csharp
+void OnCollisionEnter(Collision col)
+{
+  // col är ett objekt som innehåller information om själva kollisionen
+}
+```
+
+### OnTriggerEnter2D()
+
+För objekt med RigidBody2D. En metod som anropas ifall en 2D-collider kolliderar med någon av det här objektets 2D trigger colliders.&#x20;
+
+```csharp
+void OnTriggerEnter(Collider2Dc other)
+{
+  // other är det andra objektets collider 
+}
+```
+
 ### OnCollisionEnter2D()
+
+För objekt med RigidBody2D. En metod som anropas ifall en 2D collider kolliderar med någon av det här objektets vanliga 2D-colliders.
+
+```csharp
+void OnCollisionEnter2D(Collision2D col)
+{
+  // col är ett objekt som innehåller information om själva kollisionen
+}
+```
+
+
 
 ###

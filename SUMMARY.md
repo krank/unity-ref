@@ -21,7 +21,7 @@
 * [Kollisioner](grundfunktioner/kollisioner.md)
 * [Skapa och förstör](grundfunktioner/skapa-och-foerstoer.md)
 * [Slump](grundfunktioner/slump.md)
-* [Fysik (2D och 3D)\*](grundfunktioner/fysik-2d-och-3d.md)
+* [Fysik (2D och 3D)](grundfunktioner/fysik-2d-och-3d.md)
 * [UI och Canvas\*](grundfunktioner/ui-och-canvas.md)
 * [Importera grafik\*](grundfunktioner/importera-grafik.md)
 * [Unity Events\*](grundfunktioner/unity-events.md)

@@ -1,4 +1,4 @@
-# Fysik (2D och 3D)\*
+# Fysik (2D och 3D)
 
 I Unity är det fysikmotorn som sköter gravitation och andra fysikaliska krafter, och hindrar objekt från att clippa in i varandra. Den sköter dessutom andra kollisioner – sådana som inte har med fysikaliska krafter att göra alls, utan där det bara finns anledning att avgöra ifall två objekt överlappar varandra.
 
@@ -65,9 +65,12 @@ rigidBody.AddForce(Vector3.right * 900, ForceMode.Impulse);
 
 En collider är en "hit box" som används istället för ett spelobjekts faktiska geometri för att se om det kolliderar med något. För att en kollision mellan två objekt ska registreras av fysikmotorn behöver båda ha en collider.
 
-### BoxCollider
-
-### CapsuleCollider
+* **BoxCollider** är en collider som är format som ett rektangulärt block.
+* **SphereCollider** är en collider formad som ett klot.
+* **CapsuleCollider** är en collider formad som en cylinder som är rundad med halvklot i ändarna.
+* **BoxCollider2D** är en 2D-collider formad som en rektangel.
+* **CircleCollider2D** är en 2D-collider formad som en cirkel.
+* **CapsuleCollider2D** är en 2D-collider formad som en rektangel med halvcirklar i ändarna.
 
 ### Triggers
 
@@ -86,7 +89,14 @@ En metod som anropas ifall en collider kolliderar med någon av det här objekte
 ```csharp
 void OnTriggerEnter(Collider other)
 {
-  // other är det andra objektets collider 
+  // other är det andra objektets collider
+  // Den innehåller i sin tur en referens till det andra objektet,
+  // och därifrån kan man nå dess transform, tag och komponenter.
+  
+  if (other.gameObject.tag == "trap")
+  {
+    print("It's a trap!");
+  }
 }
 ```
 
@@ -97,7 +107,14 @@ En metod som anropas ifall en collider kolliderar med någon av det här objekte
 ```csharp
 void OnCollisionEnter(Collision col)
 {
-  // col är ett objekt som innehåller information om själva kollisionen
+  // col är ett objekt som innehåller information om själva kollisionen,
+  // däribland en referens till objektet man kolliderade med,
+  // och därifrån kan man nå dess transform, tag och komponenter.
+  
+  if (other.gameObject.tag == "bullet")
+  {
+    print("Ouch!");
+  }
 }
 ```
 
@@ -108,7 +125,14 @@ För objekt med RigidBody2D. En metod som anropas ifall en 2D-collider kollidera
 ```csharp
 void OnTriggerEnter(Collider2Dc other)
 {
-  // other är det andra objektets collider 
+  // other är det andra objektets collider
+  // Den innehåller i sin tur en referens till det andra objektet,
+  // och därifrån kan man nå dess transform, tag och komponenter.
+  
+  if (other.gameObject.tag == "trap")
+  {
+    print("It's a trap!");
+  }
 }
 ```
 
@@ -119,7 +143,14 @@ För objekt med RigidBody2D. En metod som anropas ifall en 2D collider kollidera
 ```csharp
 void OnCollisionEnter2D(Collision2D col)
 {
-  // col är ett objekt som innehåller information om själva kollisionen
+  // col är ett objekt som innehåller information om själva kollisionen,
+  // däribland en referens till objektet man kolliderade med,
+  // och därifrån kan man nå dess transform, tag och komponenter.
+  
+  if (other.gameObject.tag == "bullet")
+  {
+    print("Ouch!");
+  }
 }
 ```
 

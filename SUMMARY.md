@@ -30,7 +30,7 @@
 ## Andra funktioner
 
 * [Tilemaps\*](andra-funktioner/tilemaps.md)
-* [ProBuilder\*](andra-funktioner/probuilder.md)
+* [ProBuilder](andra-funktioner/probuilder.md)
 * [Asset Store](andra-funktioner/asset-store.md)
 * [Package manager](andra-funktioner/package-manager.md)
 

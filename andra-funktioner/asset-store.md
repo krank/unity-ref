@@ -8,7 +8,7 @@ I nyare versioner av Unity ser flödet för Asset Store oftast ut såhär:
 * Leta rätt på den asset du vill köpa. En del är gratis!
 * Klicka på "Add to my assets". Nu finns denna asset kopplad till ditt konto, och tillgänglig att läggas till i alla dina projekt.
 
-![](<../.gitbook/assets/image (9).png>)
+![](<../.gitbook/assets/image (9) (1).png>)
 
 * Starta Unity och gå till projektet där du vill använda det du valt.
 * Öppna [Package manager](package-manager.md) och gå till My assets.

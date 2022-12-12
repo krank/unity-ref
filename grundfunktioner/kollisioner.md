@@ -12,7 +12,7 @@ Om man inte behöver gravitation i sitt spel så kan man ändra Gravity Scale ti
 
 För mer exakt kollisionshantering kan man ändra Collision Detection till Continuous, Sleeping Mode till Never Sleep och Interpolate till antingen Interpolate eller Extrapolate.
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (2).png>)
 
 ## Triggers
 

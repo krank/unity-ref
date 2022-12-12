@@ -1,4 +1,4 @@
-# Kompilera och distribuera\*
+# Kompilera och distribuera
 
 Unityprojekt kan normalt bara öppnas och köras i Unity. Om de ska kunna spelas utan unity behöver de kompileras till körbara filer för önskad plattform. I normala fall, när Unity körs på en Windowsdator, kommer de körbara filerna i första hand att vara vanliga exe-filer som kan köras i 64-bitars windows.
 
@@ -55,8 +55,10 @@ Innehållet i mappen kan sedan publiceras på valfri webbserver, eller t.ex. lad
 
 ## UWP
 
-Installera modulen **"Universal Windows Platform Build Support"** (c:a 2gb). Du kommer också att behöva ha Microsoft Visual Studio installerat, så installera det antingen från dess hemsida eller genom att kryssa i modulen **"Microsoft Visual Studio Community 2019"** (c:a 1.3gb).
+Installera modulen **"Universal Windows Platform Build Support"** (c:a 2gb). Du kommer också att behöva ha Microsoft Visual Studio installerat, så installera det antingen från dess hemsida eller genom att kryssa i modulen **"Microsoft Visual Studio Community 2019"** (c:a 1.3gb). Om du har någon senare version av Visual Studio installerad så fungerar den också; då behöver du inte installera 2019.
 
 Får du sedan felmeddelanden, dubbelkolla i Visual Studio Installer så att "Desktop Development med C++" är installerat.
 
-(Mer kommer…)
+I Unityprojekt som ska exporteras till Android, gå till **File → Build Settings**, markera **Universal Windows Platform** och klicka **Switch platform**.
+
+När ett UWP-projekt build:as så skapas ett Visual Studio-projekt som i sin tur måste kompileras. För att testköra projektet, öppna SLN-filen för det genererade projektet i Visual Studio och klicka på **Debug → Start without debugging**.

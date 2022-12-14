@@ -12,7 +12,7 @@ Den övergripande inställningsfilen kallas för en Configuration profile. För 
 
 Gå till **MixedRealityToolkit**-objektet. Se till att den profil som ska klonas är vald – t.ex. **DefaultHololens2ConfigurationProfile**. Klicka på **Clone** till höger om dropdown-menyn.
 
-![](<../../.gitbook/assets/image (4).png>)
+![](<../../.gitbook/assets/image (4) (2).png>)
 
 Ge din nya profil ett namn och välj en mapp i dina Assets där du vill lägga den.
 

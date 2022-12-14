@@ -73,7 +73,7 @@ Du kan använda samma prefab för både vänster och höger VR-controller, eller
 
 Du bestämmer vilken prefab som ska användas för vilken hand genom att först gå till XR Origin -> Camera Offset i Hierarchy och markera den controller du vill välja prefab för.
 
-![](<../../.gitbook/assets/image (6).png>)
+![](<../../.gitbook/assets/image (6) (1).png>)
 
 I komponenten **XR Controller (Action-based)** finns, en bit ner, rubriken **Model** och därunder variabeln **Model Prefab**. Dra in din önskade prefab dit.
 

@@ -36,7 +36,7 @@
 
 ## Tekniker
 
-* [Påverka andra objekt\*](tekniker/paverka-andra-objekt.md)
+* [Påverka andra objekt](tekniker/paverka-andra-objekt.md)
 * [Rutnät\*](tekniker/rutnaet.md)
 
 ## Tilläggspaket

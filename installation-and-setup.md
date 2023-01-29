@@ -2,7 +2,7 @@
 
 * **Ladda ner och installera** [**Unity Hub**](https://unity3d.com/get-unity/download)**.**
   * Följ instruktionerna – skapa ett Unity-konto om du inte redan har ett, skaffa en Unity-licens (välj gratislicensen)
-  * Via Unity Hub, **installera en version av Unity**. 2020-versionerna är de mest stabila. Du kan **klicka ur alla valbara extragrejer**, framför allt Visual Studio.
+  * Via Unity Hub, **installera en version av Unity**. Du kan **klicka ur alla valbara extragrejer**, framför allt Visual Studio.
 * **Ladda ner och installera** [**Visual Studio Code**](https://code.visualstudio.com/)**.** I Code, installera följande extensions:
   * [C#](https://www.google.com/url?q=https%3A%2F%2Fmarketplace.visualstudio.com%2Fitems%3FitemName%3Dms-vscode.csharp\&sa=D\&sntz=1\&usg=AFQjCNGOzgSFj14Pbd9ut66JAvh0loJsEw) – Ger Visual Studio Code stöd för C# bl.a via programmet "OmniSharp".
   * [C# Toolbox of Productivity](https://marketplace.visualstudio.com/items?itemName=RichardZampieriprog.csharp-snippet-productivity) – Lägger till en del extra användbara genvägar och funktioner, t.ex. för att skapa nya projekt och klasser.

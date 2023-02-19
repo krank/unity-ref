@@ -7,6 +7,7 @@ Mirror är ett bibliotek av komponenter för att bygga multiplayerspel. Det finn
 * Lägg till Mirror i projektet.
 * Skapa ett nytt tomt GameObject, döp det till NetworkManager.
   * Lägg till komponenten NetworkManagerHUD.
+  * Lägg till Kcp Transport.
 * Ge alla spelobjekt som ska synkas över nätverket en NetworkIdentity-komponent. Även de som ska instantieras senare (t.ex. projektiler).
 * Ge alla spelobjekt vars position/rotation ska synkas över nätverket en NetworkTransform-komponent.
   * Ställ in så att objekt som ska styras _direkt_ av spelare har Client Authority.
@@ -23,8 +24,7 @@ Mirror är ett bibliotek av komponenter för att bygga multiplayerspel. Det finn
 Spelar-objekt
 
 * Player-objekt: NetworkBehavior, NetworkTransform, NetworkIdentity
-*
-  * isLocalPlayer
+* isLocalPlayer
 * Registrera player-objekt
 * Spawn points
 

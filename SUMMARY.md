@@ -20,6 +20,8 @@
 * [Flytta och rotera](grundfunktioner/flytta-och-rotera.md)
 * [Kollisioner](grundfunktioner/kollisioner.md)
 * [Skapa och förstör](grundfunktioner/skapa-och-foerstoer.md)
+* [Hitta spelobjekt](grundfunktioner/hitta-spelobjekt.md)
+* [Beständig data\*](grundfunktioner/bestaendig-data.md)
 * [Slump](grundfunktioner/slump.md)
 * [Fysik (2D och 3D)](grundfunktioner/fysik-2d-och-3d.md)
 * [UI och Canvas\*](grundfunktioner/ui-och-canvas.md)

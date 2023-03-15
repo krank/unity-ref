@@ -28,7 +28,7 @@ Innan en InputAction börjar fungera måste dess Enable()-metod först anropas.
 
 I Unity lägger till nya bindings med plus-knappen och vilken typ av värde InputActionen ska ge ifrån sig genom att klicka på kugghjulet.
 
-![En InputAction med en Up/Down/Left/right composite-binding som döpts till WASD](<../../.gitbook/assets/image (2) (1).png>)
+![En InputAction med en Up/Down/Left/right composite-binding som döpts till WASD](<../../.gitbook/assets/image (2) (1) (1).png>)
 
 ### ReadValue<>
 

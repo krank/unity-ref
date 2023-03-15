@@ -1,4 +1,4 @@
-# Mirror (nätverk)\*
+# Mirror (nätverk)
 
 Mirror är ett bibliotek av komponenter för att bygga multiplayerspel. Det finns gratis via Unitys [Asset Store](../andra-funktioner/asset-store.md).
 
@@ -52,18 +52,66 @@ En komponent som signalerar till NetworkManagern att objektets Transform ska syn
 
 ## NetworkBehavior
 
+NetworkBehavior är en klass som ingår i Mirror-biblioteket och som i sin tur ärver från MonoBehavior. När man har scriptkomponenter som ska nyttja sig av nätverkskommandon och liknande så behöver deras klasser ärva från NetworkBehavior istället för från MonoBehavior.
 
+```csharp
+using UnityEngine;
+using Mirror;
+
+public class PlayerController : NetworkBehaviour
+{
+  // Kod
+}
+```
 
 ### IsLocalPlayer
 
+En bool-variabel som är true ifall objektet tillhör och är styrt av den lokala spelaren.
+
+```csharp
+void Update()
+{
+  if (!IsLocalPlayer)
+  {
+    return;
+  }
+  
+  // Kod som bara ska köras för den lokala spelaren
+}
+```
+
 ### OnStartLocalPlayer
+
+En variant av Start() som bara körs för den lokala spelaren
 
 ```csharp
 public override void OnStartLocalPlayer()
 {
+  // Färgar den lokala spelaren grön
   GetComponent<Renderer>().material.color = Color.green;
 }
 ```
 
 ### Nätverkskommandon \[Command]
 
+Metoder som markeras med \[Command] kommer att köras på servern istället för på klienten.
+
+```csharp
+[Command]
+void CmdFire()
+{
+  GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+  NetworkServer.Spawn(bullet);
+}
+```
+
+### NetworkServer.Spawn()
+
+Ett kommando som tar emot ett GameObject, och ser till att instanser av denna skapas och synkroniseras över hela nätverket. Används ofta för att till exempel se till så att projektiler och powerups skapas likadant för alla spelare.
+
+Observera att objektet som ska spawnas måste vara en instans av en prefab som lagts till som Registered Spawnable Prefab i scenens NetworkManager.
+
+```csharp
+GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+NetworkServer.Spawn(bullet);
+```

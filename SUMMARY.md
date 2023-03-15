@@ -43,7 +43,7 @@
 
 ## Tilläggspaket
 
-* [Mirror (nätverk)\*](tillaeggspaket/mirror-naetverk.md)
+* [Mirror (nätverk)](tillaeggspaket/mirror-naetverk.md)
 * [XR Toolkit](tillaeggspaket/xr-toolkit/README.md)
   * [Controller](tillaeggspaket/xr-toolkit/controller.md)
   * [Interaktion](tillaeggspaket/xr-toolkit/interaktion.md)

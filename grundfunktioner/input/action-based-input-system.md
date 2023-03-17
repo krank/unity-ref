@@ -1,6 +1,8 @@
-# Action-based Input System\*
+# Action-based Input System
 
 Unity har ett nytt input-system. För att aktivera det, gå till [Package manager](../../andra-funktioner/package-manager.md) och lägg till **Input System** till projektet.
+
+(Vidare läsning: [Complete guide to the new system](https://gamedevbeginner.com/input-in-unity-made-easy-complete-guide-to-the-new-system))
 
 ## InputAction
 
@@ -123,4 +125,56 @@ Metoden FindAction tar emot namnet på en InputAction som parameter och returner
 
 ## Player Input
 
-(Kommer…)
+PlayerInput är en komponent för att enkelt knyta ihop en InputAction Asset med kod som t.ex. flyttar på spelarkaraktären.
+
+Om ingen Input Action Asset är vald, finns en knapp för att skapa en. Den som då skapas har tre Actions redan inlagda – Move, Look och Fire. Man kan enkelt lägga till flera, eller ta bort de man inte behöver, men det är i varje fall en ganska bra grund att utgå från.
+
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+**Default Scheme** och **Default Map** är det control scheme och den action map som används som standard. Ofta behöver man inte ändra på dem alls.
+
+**Behavior** är det sätt Player Input-komponenten använder för att kommunicera med andra scripts. Send Messages är antagligen det enklaste.
+
+### Send Messages
+
+Om en scriptkomponent på samma spelobjekt som Player Input har metoder som är döpta på rätt sätt, så kommer de metoderna att anropas när spelaren trycker på knappar eller drar i analoga spakar. I en normal Input Action Asset finns till exempel en Action som heter Move. När spelaren trycker på, eller släpper upp, någon av knapparna eller spakarna som är knuten till denna Action, så körs OnMove-metoden om den finns.
+
+```csharp
+public class AvatarController : MonoBehaviour
+{
+  void OnMove()
+  {
+    print("Moving!");
+  }
+}
+```
+
+### Läsa av input-värden
+
+För att läsa av exakt vilket värde en knapp eller spak har, till exempel för förflyttning, så kan man lägga till en **InputValue**-parameter till de metoder som anropas av Send Message-systemet.
+
+Från ett InputValue-objekt kan man sedan få ut Vector2 eller float eller bool, beroende på vilken typ av data som skickas av motsvarande Action. Move har ofta en Vector2 som Action Type, till exempel.&#x20;
+
+```csharp
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class AvatarController : MonoBehaviour
+{
+
+  [SerializeField]
+  float speed = 2;
+
+  Vector2 movement = new Vector2();
+
+  void Update()
+  {
+    transform.Translate(movement * speed * Time.deltaTime);
+  }
+
+  void OnMove(InputValue value)
+  {
+    movement = value.Get<Vector2>();
+  }
+}
+```

@@ -10,7 +10,7 @@ En instans är ett spelobjekt som bygger på och är kopplat till en prefab. Nä
 
 Med andra ord blir prefaben som en mall eller som en [klass](https://krank23.gitbook.io/csharp-ref/klasser-och-objektorientering/klasser-och-instanser).
 
-![](<.gitbook/assets/image (5).png>)
+![](<.gitbook/assets/image (5) (2).png>)
 
 Instanser får en extra rad med knappar högst upp i Inspectorn.
 

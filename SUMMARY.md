@@ -16,7 +16,7 @@
 ## Grundfunktioner
 
 * [Input](grundfunktioner/input/README.md)
-  * [Action-based Input System\*](grundfunktioner/input/action-based-input-system.md)
+  * [Action-based Input System](grundfunktioner/input/action-based-input-system.md)
 * [Flytta och rotera](grundfunktioner/flytta-och-rotera.md)
 * [Kollisioner](grundfunktioner/kollisioner.md)
 * [Skapa och förstör](grundfunktioner/skapa-och-foerstoer.md)

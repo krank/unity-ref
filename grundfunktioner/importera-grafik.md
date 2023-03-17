@@ -11,7 +11,7 @@ Beroende på originalens filformat så skapar Unity någon form av "Asset" kring
 
 En texture2D är helt enkelt en bild. Hur bilden ska användas bestäms genom att man väljer "texture type" i inspectorn.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (3).png" alt=""><figcaption></figcaption></figure>
 
 De vanligaste texturtyperna är:
 

@@ -21,12 +21,12 @@
 * [Kollisioner](grundfunktioner/kollisioner.md)
 * [Skapa och förstör](grundfunktioner/skapa-och-foerstoer.md)
 * [Hitta spelobjekt](grundfunktioner/hitta-spelobjekt.md)
-* [Beständig data\*](grundfunktioner/bestaendig-data.md)
+* [Beständig data](grundfunktioner/bestaendig-data.md)
 * [Slump](grundfunktioner/slump.md)
 * [Fysik (2D och 3D)](grundfunktioner/fysik-2d-och-3d.md)
 * [UI och Canvas\*](grundfunktioner/ui-och-canvas.md)
 * [Importera grafik\*](grundfunktioner/importera-grafik.md)
-* [Unity Events\*](grundfunktioner/unity-events.md)
+* [Unity Events](grundfunktioner/unity-events.md)
 * [Animationer\*](grundfunktioner/animationer.md)
 
 ## Andra funktioner

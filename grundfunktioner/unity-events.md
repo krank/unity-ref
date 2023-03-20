@@ -1,4 +1,4 @@
-# Unity Events\*
+# Unity Events
 
 Unity Events är en variation på samma designmönster som C# [delegater](https://krank23.gitbook.io/csharp-ref/grundlaeggande/delegates#multicasting-delegat-variabler-med-flera-metoder). En händelse – en "event" – knyts till en eller flera metoder. Så när händelsen aktiveras, så körs alla metoder som kopplats till den.
 
@@ -27,8 +27,80 @@ Objektet behöver väljas först, därefter komponenten, metoden och det eventue
 
 ## UnityEvent
 
-### AddListener()
+UnityEvent är datatypen för unity events. För att använda den behöver man också inkludera UnityEngine.Events.
+
+{% code title="UnityEventTest.cs" lineNumbers="true" %}
+```csharp
+using UnityEngine;
+using UnityEngine.Events;
+
+public class UnityEventTest : MonoBehaviour
+{
+  [SerializeField]
+  UnityEvent jumpEvent;
+}
+```
+{% endcode %}
 
 ### Invoke()
 
+Aktiverar eventet – det vill säga, kör alla metoder som knutits till det.
+
+```csharp
+private void Update() {
+  if (Input.GetAxisRaw("Jump") > 0)
+  {
+    jumpEvent.Invoke();
+  }
+}
+```
+
+### AddListener()
+
+Normalt används Unity-gränssnittet för att lägga till metoder som ska anropas när eventet aktiveras, men man kan också göra det i kod via AddListener().
+
+```csharp
+private void Start() {
+  jumpEvent.AddListener(Jump);
+}
+
+private void Jump()
+{
+  GetComponent<Rigidbody2D>().AddForce(Vector2.up * 1000);
+}
+```
+
 ### UnityEvent<>
+
+För att skapa events som skickar parametervärden till sina metoder, och vars metoder tar emot parametervärden, läggs parametrarnas datatyp till mellan < och >.
+
+{% code title="" lineNumbers="true" %}
+```csharp
+using UnityEngine;
+using UnityEngine.Events;
+
+public class UnityEventTest : MonoBehaviour
+{
+  [SerializeField]
+  UnityEvent<int> powerUpEvent; // Man kan bara lägga till metoder som tar emot integers
+
+  private void Start()
+  {
+    powerUpEvent.AddListener(PowerUp);
+  }
+
+  private void Update()
+  {
+    if (Input.GetAxisRaw("PowerUp") > 0)
+    {
+      powerUpEvent.Invoke(9001); // Kör alla metoder, skicka in 9001 som parametervärde
+    }
+  }
+
+  private void PowerUp(int amount)
+  {
+    print("Powering up " + amount + "!");
+  }
+}
+```
+{% endcode %}

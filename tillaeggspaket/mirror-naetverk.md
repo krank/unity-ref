@@ -30,13 +30,13 @@ En komponent som samlar in all data som ska synkroniseras över nätverket och a
 * Lägg till den prefab som ska instansieras för varje spelare som registrerar sig och bli den spelarens avatar i **Player Prefab**.
 * Lägg till alla prefabs som ska kunna instansieras över nätverket i **Registered Spawnable Prefabs**-listan.
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (2) (4).png>)
 
 ## NetworkManagerHUD
 
 En komponent som ger spelaren ett gränssnitt för att starta en server eller ansluta till en existerande server.
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (2).png>)
 
 ## Kcp Transport
 

@@ -1,4 +1,4 @@
-# Påverka andra objekt
+# Påverka andra objekt\*
 
 Om ett komponentscript på ett objekt ska kunna påverka (flytta, ta bort, etc) ett annat objekt så måste det ha en _referens_ till det objektet.
 
@@ -22,11 +22,7 @@ void OnCollisionEnter(Collision collision)
 }
 ```
 
-Ett mycket ineffektivt sätt att göra det på är via Find – det bör man bara göra i undantagsfall och absolut inte varje bildruta. Find tar emot en string, och letar igenom alla scenens spelobjekt tills metoden hittar ett med ett namn som matchar.
-
-```csharp
-GameObject otherObject = GameObject.Find("enemy");
-```
+Ett mycket ineffektivt sätt att göra det på är via [Find ](../grundfunktioner/hitta-spelobjekt.md)– det bör man bara göra i undantagsfall och absolut inte varje bildruta.
 
 ## Komponenter
 

@@ -13,7 +13,7 @@ Här finns färdiga projekt att utgå från, med all setup redan fixad. Välj pr
 * [Unity 2020.3.23](https://github.com/mikael-bergstrom-ntisthlm/MRTK-base-2020) (MRTK 2.7.2, OpenXR)
 * [Unity 2019.4.32](https://github.com/mikael-bergstrom-ntisthlm/MRTK-base-2019) (MRTK 2.7.2, Legacy XR)
 
-## Manuell setup
+## Manuell setup (MRTK 2.x)
 
 Installera [UWP-modulen](../../kompilera-och-distribuera.md#uwp) till Unity
 

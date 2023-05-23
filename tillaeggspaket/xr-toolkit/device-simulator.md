@@ -6,7 +6,7 @@ När man inte har tillgång till ett VR-headset medan man arbetar med ett VR-pro
 
 1. Om du inte gjort det redan, gå till [Package Manager](../../andra-funktioner/package-manager.md) och **XR Interaction Toolkit**-paketet. Klicka in under Samples och importera **XR Device Simulator**.
 2. Gå till din Assets och till mappen Samples > XR Interaction Toolkit > 2.0.1 > XR Device Simulator. Dra in **XR Device Simulator**-prefaben till din scen.
-3. ELLER: Gå till Edit → Project Settings och XR Interaction Toolkit. Kryssa i "Use XR Device Simulator in Scenes".
+3. **ELLER:** Gå till Edit → Project Settings och XR Interaction Toolkit. Kryssa i "Use XR Device Simulator in Scenes".
 
 ### I Unity 2021.3, med InputSystem 1.4.0+
 

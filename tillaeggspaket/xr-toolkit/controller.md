@@ -2,17 +2,15 @@
 
 ## Prefab
 
-Om du vill kunna se var dina händer/kontroller är i VR så måste du själv bestämma hur de ska se ut. Du kan importera 3D-modeller du själv skapat eller hittat i Asset Store, eller bara skapa enkla lådor själv. Vad som helst fungerar så länge du kan skapa [prefabs ](../../begrepp.md#prefab)av dem.
+Om du använder "Complete XR Origin Set Up" så syns dina kontroller som ett par generiska vita 3d-modeller i VR-rymden. Oavsett vilket kan du välja egna 3d-modeller att använda.
 
-![Ett exempel på väldigt enkel prefab](<../../.gitbook/assets/image (11) (1).png>)
+Expandera XR Origin och Camera Offset, och markera LeftHand Controller (eller RightHand Controller). Scrolla ner till "Model prefab". Lägg in den modell du vill använda.
 
-Du kan använda samma prefab för både vänster och höger VR-controller, eller ha olika.
-
-Du bestämmer vilken prefab som ska användas för vilken hand genom att först gå till XR Origin -> Camera Offset i Hierarchy och markera den controller du vill välja prefab för.
-
-![](<../../.gitbook/assets/image (6) (1).png>)
+De generiska vita 3d-modellerna finns under Assets → Samples → XR Interaction Toolkit → 2.3.2 → Starter Assets → Prefabs → XR Origin Pieces.
 
 ## Kod
+
+Nedanstående är den kod som du kan använda för att få saker att hända när spelaren gör olika saker med VR-handkontrollerna.
 
 ### ActionBasedController
 

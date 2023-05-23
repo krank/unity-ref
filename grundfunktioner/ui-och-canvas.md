@@ -12,7 +12,7 @@ När man normalt skapar en Canvas så är denna _jättestor_ i scenvyn. Det bero
 
 För 2D-spel, framför allt sådana som bara har en kamera, passar det ofta bättre att använda **Screen Space: Camera** som Render Mode. Det ställs in i Canvas-komponenten. Då behöver man också ange vilken kamera canvasen ska anpassa sig efter.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Rect transform
 

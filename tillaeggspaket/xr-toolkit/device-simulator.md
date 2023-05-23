@@ -6,6 +6,7 @@ När man inte har tillgång till ett VR-headset medan man arbetar med ett VR-pro
 
 1. Om du inte gjort det redan, gå till [Package Manager](../../andra-funktioner/package-manager.md) och **XR Interaction Toolkit**-paketet. Klicka in under Samples och importera **XR Device Simulator**.
 2. Gå till din Assets och till mappen Samples > XR Interaction Toolkit > 2.0.1 > XR Device Simulator. Dra in **XR Device Simulator**-prefaben till din scen.
+3. ELLER: Gå till Edit → Project Settings och XR Interaction Toolkit. Kryssa i "Use XR Device Simulator in Scenes".
 
 ### I Unity 2021.3, med InputSystem 1.4.0+
 
@@ -28,23 +29,21 @@ public class ShortcutDisabler : MonoBehaviour
 
 ## Kontroller
 
-För att få vanliga WASD-kontroller och mouselook (inklueive E och Q för att åka uppåt/nedåt), tryck R och 3. Sedan kan du hålla nere höger musknapp för att flytta runt och styra simulatorn. Håll nere **vänster shift** för att styra vänster handkontroll och mellanslag för att styra den högra. Vänster musknapp simulerar avtryckaren och G-knappen simulerar greppknappen.
+Styr det simulerade VR-headsetet med vanliga WASD-kontroller och mouselook (inklusive E och Q för att åka uppåt/nedåt). Håll nere **vänster shift** för att styra vänster handkontroll och **mellanslag** för att styra den högra. Vänster musknapp simulerar avtryckaren och G-knappen simulerar greppknappen.
 
-| Välja enhet att styra     | Toggle | Simulator                             |
-| ------------------------- | ------ | ------------------------------------- |
-| Hålla nere höger musknapp |        | Headset                               |
-| Hålla nere vänster shift  |        | Vänster VR-handkontroll (tillfälligt) |
-| Hålla nere mellanslag     |        | Höger VR-handkontroll (tillfälligt)   |
-| T                         | Ja     | Vänster VR-handkontroll               |
-| Y                         | Ja     | Höger VR-handkontroll                 |
+| Välja enhet att styra    | Toggle | Simulator                             |
+| ------------------------ | ------ | ------------------------------------- |
+| Hålla nere vänster shift |        | Vänster VR-handkontroll (tillfälligt) |
+| Hålla nere mellanslag    |        | Höger VR-handkontroll (tillfälligt)   |
+| T                        | Ja     | Vänster VR-handkontroll               |
+| Y                        | Ja     | Höger VR-handkontroll                 |
 
-| Styrning/rotation    | Toggle | Simulator                                      |
-| -------------------- | ------ | ---------------------------------------------- |
-| Flytta musen/scrolla |        | Flytta enhet i x/y/z-led                       |
-| Mitten-musknappen    |        | Rotera enhet i x/y/z-led                       |
-| R                    | Ja     | Byt plats på de två ovanstående                |
-| 1                    | Ja     | WASD+EQ för primary 2D Axis (Oculus: joystick) |
-| 3                    | Ja     | Aktivera WASD+EQ för förflyttning av enhet     |
+| Styrning/rotation | Toggle | Simulator                                       |
+| ----------------- | ------ | ----------------------------------------------- |
+| WASD              |        | Flytta headset framåt / bakåt / vänster / höger |
+| Flytta musen      |        | Lookaround                                      |
+| Scrollhjulet      |        | Rotera enhet                                    |
+| Mittenknappen     |        | Flytta vald handkontroll                        |
 
 | Knappar          | Simulator                                           |
 | ---------------- | --------------------------------------------------- |

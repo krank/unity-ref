@@ -42,11 +42,7 @@ Precis som med vanliga lager används Add Layer för att skapa nya lager. Se til
 
 För att göra så att ett objekt kan interageras med, behöver det en Interactable-komponent. Det finns flera olika.
 
-| Komponent              | Beskrivning                                                                                                                             |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| XR Grab Interactable   | Objekt som kan plockas upp genom att man trycker på Grab-knappen                                                                        |
-| XR Simple Interactable | Enklast möjliga: objektet kan interageras med men saknar inbyggd funktionalitet.                                                        |
-| XR Socket Interactable | Objekt som andra objekt kan sättas fast på. En mer detaljerad genomgång finns t.ex. [här](https://www.youtube.com/watch?v=rRNvq09Itdw). |
+<table><thead><tr><th width="194">Komponent</th><th>Beskrivning</th></tr></thead><tbody><tr><td>XR Grab Interactable</td><td>Objekt som kan plockas upp genom att man trycker på Grab-knappen</td></tr><tr><td>XR Simple Interactable</td><td>Enklast möjliga: objektet kan interageras med men saknar inbyggd funktionalitet.</td></tr><tr><td>XR Socket Interactable</td><td>Objekt som andra objekt kan sättas fast på. En mer detaljerad genomgång finns t.ex. <a href="https://www.youtube.com/watch?v=rRNvq09Itdw">här</a>.</td></tr></tbody></table>
 
 Objektet behöver också en collider av något slag, och antagligen en RigidBody. Fysik-systemet används för att avgöra om objektet kolliderar med en VR-handkontroll eller med en stråle från ray interaction.
 

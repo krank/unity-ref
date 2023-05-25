@@ -12,7 +12,7 @@ För att en scen ska komma med när spelet körs så behöver den läggas till i
 
 Man lägger till scener i listan genom att dra dem dit från Assets-fönstret eller genom att öppna en scen och klicka på "Add open scenes".
 
-![](<.gitbook/assets/image (1) (1).png>)
+![](<.gitbook/assets/image (1) (1) (1).png>)
 
 Man kan byta ordning på scenerna genom att klicka och dra.
 

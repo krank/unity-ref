@@ -13,10 +13,10 @@ _De här instruktionerna bör fungera i Unity 2020.3 och senare, men bör funger
 
 Utgå från ett vanligt 3D-projekt.
 
-Gå till [Package manager](../../andra-funktioner/package-manager.md) och installera paketen "XR Plugin Management" och "XR Interaction Toolkit" frå Unity Registry. Tacka ja ifall Unity frågar om du vill byta till det nya input-systemet.
+Gå till [Package manager](../../andra-funktioner/package-manager.md) och installera paketen "XR Plugin Management" och "XR Interaction Toolkit" (version 2.3.2 eller nyare) från Unity Registry. Tacka ja ifall Unity frågar om du vill byta till det nya input-systemet.
 
 {% hint style="info" %}
-Om XR Interaction Toolkit inte finns i Unity Registry-listan, klicka på plustecknet uppe till höger, "Add package by name" och skriv in **com.unity.xr.interaction.toolkit** som name och **2.3.2** som version.
+Om XR Interaction Toolkit 2.3.2 inte finns i Unity Registry-listan, klicka på plustecknet uppe till höger, "Add package by name" och skriv in **com.unity.xr.interaction.toolkit** som name och **2.3.2** som version.
 {% endhint %}
 
 När du lägger till paketet kommer Unity att fråga om du vill aktivera det nya input-systemet. Tacka ja. Det kommer att innebära att Unity-editorn startas om.

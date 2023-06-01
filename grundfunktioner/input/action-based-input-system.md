@@ -129,7 +129,7 @@ PlayerInput är en komponent för att enkelt knyta ihop en InputAction Asset med
 
 Om ingen Input Action Asset är vald, finns en knapp för att skapa en. Den som då skapas har tre Actions redan inlagda – Move, Look och Fire. Man kan enkelt lägga till flera, eller ta bort de man inte behöver, men det är i varje fall en ganska bra grund att utgå från.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Default Scheme** och **Default Map** är det control scheme och den action map som används som standard. Ofta behöver man inte ändra på dem alls.
 

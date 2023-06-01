@@ -52,7 +52,7 @@ Gå till **Player**, även här Android-fliken, och gå ner till och expandera r
 
 Gå ner till underrubriken **Identification** och dubbelkolla så att **Minimum API Level** är API Level 23 (Android 6.0).
 
-![](<../../.gitbook/assets/image (3) (1).png>)
+![](<../../.gitbook/assets/image (3) (1) (1).png>)
 
 Nu är projektet redo att deployas och köras på en Quest 2.
 

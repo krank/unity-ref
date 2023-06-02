@@ -6,9 +6,10 @@ Här finns färdiga projekt att utgå från, med all setup redan fixad. Välj pr
 
 **Hololens 2:**
 
-* [MRTK\_BASE\_HL2\_2020](https://github.com/mikael-bergstrom-ntisthlm/MRTK\_BASE\_HL2\_2020)
+* [MRTK3\_BASE\_HL2\_2021](https://github.com/mikael-bergstrom-ntisthlm/MRTK3\_BASE\_HL2\_2021) (MRTK 3, Unity 2021.3.26)
+* [MRTK\_BASE\_HL2\_2020](https://github.com/mikael-bergstrom-ntisthlm/MRTK\_BASE\_HL2\_2020) (MRTK 2.x, Unity 2020)
 
-**Hololens 1:**
+**Hololens 1 (ej uppdaterade):**
 
 * [Unity 2020.3.23](https://github.com/mikael-bergstrom-ntisthlm/MRTK-base-2020) (MRTK 2.7.2, OpenXR)
 * [Unity 2019.4.32](https://github.com/mikael-bergstrom-ntisthlm/MRTK-base-2019) (MRTK 2.7.2, Legacy XR)

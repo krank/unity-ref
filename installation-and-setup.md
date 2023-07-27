@@ -10,7 +10,7 @@
   * [gitignore](https://www.google.com/url?q=https%3A%2F%2Fmarketplace.visualstudio.com%2Fitems%3FitemName%3Dcodezombiech.gitignore\&sa=D\&sntz=1\&usg=AFQjCNHu8aUEHuuoWIdAZQcCdvDqnSWhSQ) – Underlättar arbetet med git och Visual Studio Code. Om du söker efter den, se till att ta den av CodeZombie!
 * **Ladda ner och installera** [**.NET Framework SDK 4.7.1**](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net471-developer-pack-offline-installer)**.**&#x20;
   * Behövs av OmniSharp.
-* **Ladda ner och installera** [**Dotnet 6 SDK**](https://dotnet.microsoft.com/en-us/download)
+* **Ladda ner och installera** [**Dotnet 6 SDK**](https://dotnet.microsoft.com/en-us/download) **eller nyare**
   * Behövs av OmniSharp.
 
 ## Nytt projekt
@@ -22,6 +22,9 @@
     * Local packages
     * Built-in packages
   * Klicka på **"Regenerate project files"**.
+* **Stäng av C# Dev Kit** i Visual Studio Code första gången du öppnar programmet
+  * Gå till Extensions, klicka på kugghjulet för C# Dev Kit, välj **"Disable (workspace)"**.
+  * C# Dev Kit fungerar inte tillsammans med Unitys C# om du vill ha autokomplettering.
 
 ### Problem med autokomplettering/Omnisharp?
 

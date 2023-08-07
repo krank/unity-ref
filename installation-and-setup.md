@@ -2,15 +2,24 @@
 
 * **Ladda ner och installera** [**Unity Hub**](https://unity3d.com/get-unity/download)**.**
   * Följ instruktionerna – skapa ett Unity-konto om du inte redan har ett, skaffa en Unity-licens (välj gratislicensen)
+  * Kan installeras via winget: `winget install Unity.UnityHub`
   * Via Unity Hub, **installera en version av Unity**. Du kan **klicka ur alla valbara extragrejer**, framför allt Visual Studio.
+  * Unity Hub  och Unity tar tillsammans upp c:a **5.5 gb**
 * **Ladda ner och installera** [**Visual Studio Code**](https://code.visualstudio.com/)**.** I Code, installera följande extensions:
   * [C#](https://www.google.com/url?q=https%3A%2F%2Fmarketplace.visualstudio.com%2Fitems%3FitemName%3Dms-vscode.csharp\&sa=D\&sntz=1\&usg=AFQjCNGOzgSFj14Pbd9ut66JAvh0loJsEw) – Ger Visual Studio Code stöd för C# bl.a via programmet "OmniSharp" som ger kodkomplettering.
   * [Unity Code Snippets](https://marketplace.visualstudio.com/items?itemName=kleber-swf.unity-code-snippets) – lägger till en del smarta kodkompletteringar för Unity.
   * [gitignore](https://www.google.com/url?q=https%3A%2F%2Fmarketplace.visualstudio.com%2Fitems%3FitemName%3Dcodezombiech.gitignore\&sa=D\&sntz=1\&usg=AFQjCNHu8aUEHuuoWIdAZQcCdvDqnSWhSQ) – Underlättar arbetet med git och Visual Studio Code. Om du söker efter den, se till att ta den av CodeZombie!
+  * Kan installeras via winget: `winget install Microsoft.VisualStudioCode`
+  * Visual Studio Code inkl. extensions tar upp c:a **1gb**
 * **Ladda ner och installera** [**.NET Framework SDK 4.7.1**](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net471-developer-pack-offline-installer)**.**&#x20;
   * Behövs av OmniSharp.
+  * Tar upp c:a **0.3 gb**
 * **Ladda ner och installera** [**Dotnet 6 SDK**](https://dotnet.microsoft.com/en-us/download) **eller nyare**
   * Behövs av OmniSharp.
+  * Kan installeras via winget: `winget installMicrosoft.DotNet.SDK.7`
+  * Tar upp c:a **1.2 gb**
+
+Att installera allt ovanstående på en helt nyinstallerad dator kräver totalt c:a **8 gb** ledigt utrymme.
 
 ## Nytt projekt
 

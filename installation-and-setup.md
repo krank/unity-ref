@@ -24,6 +24,7 @@ Att installera allt ovanstående på en helt nyinstallerad dator kräver totalt 
 
 * Välj själv den template (2D, 3D etc) som bäst matchar spelet du tänker bygga.
 * Gå till **Window → Package Manager** och se till så att paketet **Visual Studio Editor** är uppdaterat (minst version 2.0.20).
+  * Du kan behöva **avinstallera** metapaketet **Engineering** och sedan manuellt installera Visual Studio Editor.
 * När projektet skapats, gå till **Edit →** **Preferences** och **External Tools**. Välj **Visual Studio Code** som **External Script Editor.**
 
 ### ~~Problem med autokomplettering/Omnisharp?~~

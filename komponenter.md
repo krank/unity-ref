@@ -32,6 +32,20 @@ void Start()
 }
 ```
 
+## TryGetComponent<>()
+
+Fungerar dels som GetComponent, men är mer säker – fungerar lite som [TryParse](http://127.0.0.1:5000/s/-MHmNgpRz-b16wpwGwZI-887967055/grundlaeggande/typkonvertering#int.tryparse). Med andra ord: Går det inte att hitta rätt komponent, så returneras false.
+
+```csharp
+void Start()
+{
+  if (this.GetComponent<Rigidbody2D>(out RigidBody2D rigidBody)
+  {
+    // Gör något med rigidBody
+  }
+}
+```
+
 ## Komponentmenyn
 
 Klicka på ![](<.gitbook/assets/image (20).png>) till höger om komponentens namn för att ta fram komponentmenyn.

@@ -45,7 +45,7 @@
 
 * [Mirror (nätverk)](tillaeggspaket/mirror-naetverk.md)
 * [XR Toolkit](tillaeggspaket/xr-toolkit/README.md)
-  * [Controller](tillaeggspaket/xr-toolkit/controller.md)
+  * [Controllers](tillaeggspaket/xr-toolkit/controllers.md)
   * [Interaktion](tillaeggspaket/xr-toolkit/interaktion.md)
   * [Device Simulator](tillaeggspaket/xr-toolkit/device-simulator.md)
   * [Teleportation](tillaeggspaket/xr-toolkit/teleportation.md)

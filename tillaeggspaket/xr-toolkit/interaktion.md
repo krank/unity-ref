@@ -6,7 +6,7 @@ I VR-sammanhang är "interaktion" specifikt när VR-utrustningen interagerar med
 
 Om du tänkt ha någon form av interaktion i din scen så behöver också något objekt ha en **XR Interaction Manager**-komponent. Lägg till den i XR Origin eller skapa ett helt nytt objekt som bara innehåller komponenten genom att högerklicka i Hierarchy och välja XR och Interaction Manager.
 
-## Controllers
+## Controllers / interactors
 
 XR-controllers kan ha två olika typer av interaktion: **ray interaction** och **direct interaction**. Varje handkontrolls-objekt kan normalt bara ha komponenter för en av dem, så om man vill kombinera behövs en workaround – se [teleportation ](teleportation.md)för ett exempel.
 
@@ -38,6 +38,31 @@ Både XR Ray Interactor och XR Direct Interactor-komponenterna har en **Layer In
 
 Precis som med vanliga lager används Add Layer för att skapa nya lager. Se till så att bara de lager just denna interactor ska kunna interagera med är förkryssade. Detta blir extra viktigt om du vill ha olika sorters interactors för [teleportation ](teleportation.md)och att plocka upp föremål.
 
+### Interactors och kod
+
+Oavsett vilken typ av interactor som används så kan man användas kod för att till exempel läsa av vilket eller vilka objekt den hovrar över just nu:
+
+```csharp
+public class ControllerController : MonoBehaviour
+{
+  XRBaseInteractor interactor; // Basklassen för alla interactors
+
+  void Awake()
+  {
+    interactor = GetComponentInChildren<XRRayInteractor>();
+  }
+
+  void Update()
+  {
+    foreach (IXRHoverInteractable interactable in interactor.interactablesHovered)
+    {
+      // skriver ut namnet på objektet som hovras över
+      Debug.Log(interactable.transform.name);
+    }
+  }
+}
+```
+
 ## Föremål som kan interageras med
 
 För att göra så att ett objekt kan interageras med, behöver det en Interactable-komponent. Det finns flera olika.
@@ -50,7 +75,7 @@ Objektet behöver också en collider av något slag, och antagligen en RigidBody
 
 En **XR Tint Interactable Visual**-komponent gör att objektet får en tydlig visuell indikation på att det är det nuvarande målet för interaktionen.
 
-### Reagera med kod
+### Reagera med kod via Events
 
 Objekt som har någon form av Interactable-komponent kommer att ha ett antal Interactable Events som kan knytas till specifika metoder i kod – precis som events i [det vanliga UI-systemet](../../grundfunktioner/ui-och-canvas.md#events).
 
@@ -58,9 +83,94 @@ I listan är det mesta ganska självförklarande, men det finns tre viktiga begr
 
 * **Hover** betyder att spelaren markerat objektet med en stråle (ray interactor) eller en VR-handkontroll (direct interactor).
 * **Select** betyder att spelaren tryckt på **grepp-knappen** på sin VR-handkontroll. Man kan ändra vilken knapp som gör "select" om man vill.
-* **Activate** betyder att spelaren tryckt på **trigger-knappen** på sin VR-handkontroll. Man kan ändra vilken knapp som gör "activate" om man vill.
+* **Activate** betyder att spelaren tryckt på **trigger-knappen** på sin VR-handkontroll. Man kan ändra vilken knapp som gör "activate" om man vill. OBS: För att Activate ska ske måste Grab ha skett först
 
 I exemplet nedan aktiveras metoden **DoSomething** i **CapsuleController**-scriptet som finns i objektet **Capsule** när spelaren **markerat** objektet med antingen sin stråle (ray interactor) eller sin VR-handkontroll (direct interactor)
 
 ![](<../../.gitbook/assets/image (13) (1).png>)
 
+### Reagera med kod – bara kod
+
+I scripts som ligger på det interagerbara objektet kan man skriva kod för att lägga till metoder direkt – utan att gå via den visuella Events-listan. Man gör då detta genom att använda AddListener-metoden på Interactable-komponenten.
+
+Exemplet nedan gäller XR Grab Interactables, men motsvarande gäller också övriga.
+
+{% code title="CubeController.cs" %}
+```csharp
+using UnityEngine.XR;
+using UnityEngine.XR.Interaction.Toolkit;
+
+public class CubeController : MonoBehaviour
+{
+  XRBaseInteractable interactable;
+
+  void Awake()
+  {
+    interactable = GetComponent<XRGrabInteractable>();
+    interactable.activated.AddListener(ActivateEvent);
+  }
+
+  void ActivateEvent(ActivateEventArgs args)
+  {
+    // Det som ska hända
+  }
+}
+```
+{% endcode %}
+
+## Exempel: Köra kod på objekt man pekar på, när man trycker på avtryckaren
+
+Om man vill att något ska hända direkt när spelaren pekar sin controller, med [ray interactor](interaktion.md#ray-interaction), mot ett föremål och trycker på avtryckaren så kan man kombinera tekniker så här:
+
+{% code title="EnemyController" %}
+```csharp
+public class EnemyController : MonoBehaviour
+{
+  public void Damage()
+  {
+    Debug.Log("Damaged!");
+  }
+}
+```
+{% endcode %}
+
+EnemyController läggs på objektet som ska kunna påverkas – skadas, i det här fallet.
+
+GunController, nedan, läggs på Left Controller och Right Controller.
+
+Det GunController gör är att först hitta referenser till ActionBasedController (som sköter input-delen) och XRRayInteractor (som sköter kollen av vilka objekt man pekar på).
+
+När spelaren sedan trycker på Activate-knappen (avtryckaren) så körs metoden Fire, som går igenom alla objekt som XRRayInteractorn känner av, och ifall de har en EnemyController-komponent så körs dess Damage-metod.
+
+{% code title="GunController.cs" %}
+```csharp
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit;
+
+public class GunController : MonoBehaviour
+{
+  ActionBasedController controller;
+  XRBaseInteractor interactor;
+
+  void Awake()
+  {
+    controller = GetComponent<ActionBasedController>();
+    interactor = GetComponentInChildren<XRRayInteractor>();
+
+    controller.activateAction.action.started += Fire;
+  }
+
+  void Fire(InputAction.CallbackContext ctx)
+  {
+    foreach (IXRHoverInteractable interactable in interactor.interactablesHovered)
+    {
+      if (interactable.transform.TryGetComponent<EnemyController>(out EnemyController controller))
+      {
+        controller.Damage();
+      }
+    }
+  }
+}
+```
+{% endcode %}

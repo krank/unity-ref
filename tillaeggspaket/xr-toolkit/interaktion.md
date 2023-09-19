@@ -1,3 +1,7 @@
+---
+description: UNDER UPPDATERING // Micke, 2023-09-19
+---
+
 # Interaktion
 
 I VR-sammanhang är "interaktion" specifikt när VR-utrustningen interagerar med den virtuella miljön. Till exempel är en VR-handkontroll används för att plocka upp något eller trycka på en knapp.
@@ -6,9 +10,25 @@ I VR-sammanhang är "interaktion" specifikt när VR-utrustningen interagerar med
 
 Om du tänkt ha någon form av interaktion i din scen så behöver också något objekt ha en **XR Interaction Manager**-komponent. Lägg till den i XR Origin eller skapa ett helt nytt objekt som bara innehåller komponenten genom att högerklicka i Hierarchy och välja XR och Interaction Manager.
 
-## Controllers / interactors
+## Interactors och interactibles
 
-XR-controllers kan ha två olika typer av interaktion: **ray interaction** och **direct interaction**. Varje handkontrolls-objekt kan normalt bara ha komponenter för en av dem, så om man vill kombinera behövs en workaround – se [teleportation ](teleportation.md)för ett exempel.
+Interaktion i XR Toolkit sker mellan **interactors** och **interactibles**.
+
+Objekt som har en interactible-komponent kan man göra något med – plocka upp, kasta, trycka på, dra i, öppna.
+
+Objekt som har en interactor-komponent kan sedan påverka dessa interactible-objekt.
+
+_Exempel: Man vill kunna trycka på en knapp med sin VR-handkontroll. Knappen behöver då en interactible-komponent och VR-handkontrollen behöver en interactor-komponent._
+
+## Interactors
+
+Det finns tre huvudsakliga interactors:
+
+* XR Ray Interactor –&#x20;
+* XR Direct Interactor –&#x20;
+* XR Poke Interactor –&#x20;
+
+XR-controllers kan ha tre olika typer av interaktion: **ray interaction** och **direct interaction**. Varje handkontrolls-objekt kan normalt bara ha komponenter för en av dem, så om man vill kombinera behövs en workaround – se [teleportation ](teleportation.md)för ett exempel.
 
 Objekten som motsvarar dina VR-handkontroller finns i din XR Origin, under Camera Offset.
 

@@ -12,4 +12,4 @@ Varje GameObject består av ett antal **Components**.
 
 Varje Component är ett script som ger viss funktionalitet till det GameObject det sitter ihop med. Alla GameObjects har t.ex. en Transform-Component som ger objektet dess position, rotation och skalning.
 
-I en Component kan det sedan finnas **variabler**. Transform-komponenten her till exempel [Vector3](datatyper-och-synlighet.md#vector3)-variabler för position, rotation och skalning av objektet.
+I en Component kan det sedan finnas **variabler**. Transform-komponenten her till exempel [Vector3](../grundfunktioner/datatyper-och-synlighet.md#vector3)-variabler för position, rotation och skalning av objektet.

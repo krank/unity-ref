@@ -50,7 +50,7 @@ Lägg till en **XR Direct Interactor**-komponent till det VR-handkontroll-objekt
 
 ### Interaction layer mask
 
-Oavsett om det gäller ray interaction eller direct interaction kan **interaction layers** användas för att bestämma vilka objekt som ska kunna interageras med. Interaction layers fungrar ungefär som vanliga [lager](../../lager-och-taggar.md).&#x20;
+Oavsett om det gäller ray interaction eller direct interaction kan **interaction layers** användas för att bestämma vilka objekt som ska kunna interageras med. Interaction layers fungrar ungefär som vanliga [lager](../../grundlaeggande-koncept/lager-och-taggar.md).&#x20;
 
 Både XR Ray Interactor och XR Direct Interactor-komponenterna har en **Layer Interaction Mask**-variabel.
 

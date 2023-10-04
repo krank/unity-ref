@@ -19,7 +19,7 @@ Vektor3 movement = Vektor3.right * speed * Time.deltaTime;
 
 ### transform.Translate()
 
-En metod som tar emot en [Vector3 ](../datatyper-och-synlighet.md#vector3)och adderar den till den nuvarande positionen - samma sak som att addera själv alltså, men via en metod.
+En metod som tar emot en [Vector3 ](datatyper-och-synlighet.md#vector3)och adderar den till den nuvarande positionen - samma sak som att addera själv alltså, men via en metod.
 
 ```csharp
 Vektor3 movement = Vektor3.right * Time.deltaTime;
@@ -28,7 +28,7 @@ transform.Translate(movement);
 
 ### transform.position
 
-En [Vektor3](../datatyper-och-synlighet.md#vector3) som motsvarar objektets nuvarande x, y- och z-position i världen.
+En [Vektor3](datatyper-och-synlighet.md#vector3) som motsvarar objektets nuvarande x, y- och z-position i världen.
 
 ```csharp
 Vector3 newPosition = new Vector3(2f, 3.2f, 0f);

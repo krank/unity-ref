@@ -44,7 +44,7 @@ Se till så att du lagt till XR Plugin Management-paketet i [Package Manager](..
 
 Gå till Edit -> Project Settings. Klicka på **XR Plugin Management**. Klicka på Android-fliken (den till höger) och kryssa i Oculus.
 
-![](<../../.gitbook/assets/image (4) (1).png>)
+![](<../../.gitbook/assets/image (4) (1) (1).png>)
 
 Gå till **Player**, även här Android-fliken, och gå ner till och expandera rubriken **Other Settings**.
 
@@ -52,7 +52,7 @@ Gå till **Player**, även här Android-fliken, och gå ner till och expandera r
 
 Gå ner till underrubriken **Identification** och dubbelkolla så att **Minimum API Level** är API Level 23 (Android 6.0).
 
-![](<../../.gitbook/assets/image (3) (1) (1).png>)
+![](<../../.gitbook/assets/image (3) (1) (1) (1).png>)
 
 Nu är projektet redo att deployas och köras på en Quest 2.
 

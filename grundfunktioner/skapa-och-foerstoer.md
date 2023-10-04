@@ -8,7 +8,7 @@ För att skapa en kopia av ett GameObject används Instantiate.
 Instantiate(somePrefab);
 ```
 
-Ofta används denna för att skapa kopior av prefabs. Då deklarerar man en GameObject-variabel som public eller använder [SerializeField](../datatyper-och-synlighet.md#serializefield). Sedan använder man Unitys editor, och inspectorn, för att göra så att variabeln länkar till prefaben i Assets.
+Ofta används denna för att skapa kopior av prefabs. Då deklarerar man en GameObject-variabel som public eller använder [SerializeField](datatyper-och-synlighet.md#serializefield). Sedan använder man Unitys editor, och inspectorn, för att göra så att variabeln länkar till prefaben i Assets.
 
 ```csharp
 [SerializeField]

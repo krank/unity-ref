@@ -26,7 +26,7 @@ Ett mycket ineffektivt sätt att göra det på är via [Find ](../grundfunktione
 
 ## Komponenter
 
-När man väl har en referens till ett annat GameObject kan man dels påverka det direkt, dels komma åt dess komponenter via [GetComponent ](../komponenter.md#getcomponent-less-than-greater-than)och påverka dem. Det gäller även andra script-komponenter.
+När man väl har en referens till ett annat GameObject kan man dels påverka det direkt, dels komma åt dess komponenter via [GetComponent ](../grundlaeggande-koncept/komponenter.md#getcomponent-less-than-greater-than)och påverka dem. Det gäller även andra script-komponenter.
 
 ```csharp
 void OnCollisionEnter(Collision collision)

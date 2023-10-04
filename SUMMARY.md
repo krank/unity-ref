@@ -3,18 +3,22 @@
 * [Unity snabbreferens](README.md)
 * [Installation & setup](installation-and-setup.md)
 * [Kompilera och distribuera](kompilera-och-distribuera.md)
-* [Ett Unityprojekts uppbyggnad](ett-unityprojekts-uppbyggnad.md)
-* [Begrepp](begrepp.md)
-* [Datatyper och synlighet](datatyper-och-synlighet.md)
-* [Komponenter](komponenter.md)
-* [Prefabs och instanser](prefabs-och-instanser.md)
-* [Scener](scener.md)
-* [MonoBehavior](monobehavior.md)
-* [Lager och taggar](lager-och-taggar.md)
-* [Knappar och axlar](knappar-och-axlar.md)
+
+## Grundläggande koncept
+
+* [Begrepp](grundlaeggande-koncept/begrepp.md)
+* [Ett Unityprojekts uppbyggnad](grundlaeggande-koncept/ett-unityprojekts-uppbyggnad.md)
+* [Prefabs och instanser](grundlaeggande-koncept/prefabs-och-instanser.md)
+* [Komponenter](grundlaeggande-koncept/komponenter.md)
+* [Scener](grundlaeggande-koncept/scener.md)
+* [MonoBehavior](grundlaeggande-koncept/monobehavior.md)
+* [Lager och taggar](grundlaeggande-koncept/lager-och-taggar.md)
+* [Knappar och axlar](grundlaeggande-koncept/knappar-och-axlar.md)
 
 ## Grundfunktioner
 
+* [Debug och gizmos](grundfunktioner/debug-och-gizmos.md)
+* [Datatyper och synlighet](grundfunktioner/datatyper-och-synlighet.md)
 * [Input](grundfunktioner/input/README.md)
   * [Action-based Input System](grundfunktioner/input/action-based-input-system.md)
 * [Flytta och rotera](grundfunktioner/flytta-och-rotera.md)

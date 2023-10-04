@@ -4,7 +4,7 @@
 
 ### Input.GetAxisRaw()
 
-En metod som hämtar det nuvarande värdet hos en [axel](../../knappar-och-axlar.md). Returnerar resultatet som en float.
+En metod som hämtar det nuvarande värdet hos en [axel](../../grundlaeggande-koncept/knappar-och-axlar.md). Returnerar resultatet som en float.
 
 ```csharp
 float moveX = Input.GetAxisRaw("Horizontal");
@@ -14,7 +14,7 @@ float moveX = Input.GetAxisRaw("Horizontal");
 
 ### Input.mousePosition
 
-En [Vector3](../../datatyper-och-synlighet.md#vector3) som innehåller musens nuvarande position i "screen space", alltså uttryckt i pixlar utifrån origo uppe i vänstra hörnet.
+En [Vector3](../datatyper-och-synlighet.md#vector3) som innehåller musens nuvarande position i "screen space", alltså uttryckt i pixlar utifrån origo uppe i vänstra hörnet.
 
 ### Camera.main.ScreenToWorldPoint()
 
@@ -27,7 +27,7 @@ Vector3 mousePosInWorld = Camera.main.ScreenToWorldPoint(mousePosOnScreen);
 
 ### OnMouseUp()
 
-En händelsemetod som man kan lägga till sitt projekt, lite som OnEnterCollision eller [Start eller Update](../../monobehavior.md#haendelse-metoder). Den anropas ifall användaren klickar på objektet. Det kräver att objektet har en collider.
+En händelsemetod som man kan lägga till sitt projekt, lite som OnEnterCollision eller [Start eller Update](../../grundlaeggande-koncept/monobehavior.md#haendelse-metoder). Den anropas ifall användaren klickar på objektet. Det kräver att objektet har en collider.
 
 ```csharp
 private void OnMouseUp()

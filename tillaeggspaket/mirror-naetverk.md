@@ -36,7 +36,7 @@ En komponent som samlar in all data som ska synkroniseras över nätverket och a
 
 En komponent som ger spelaren ett gränssnitt för att starta en server eller ansluta till en existerande server.
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (2) (1).png>)
 
 ## Kcp Transport
 

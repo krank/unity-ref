@@ -51,7 +51,7 @@ Lägg in en **XR Interaction Manager** i scenen (GameObject → XR → Interacti
 
 Lägg in en **XR Origin** i scenen (GameObject → XR → XR Origin (VR)).
 
-Expandera XR Origin och dess Camera Offset och markera LeftHand Controller. Klicka på "Select Preset" (<img src="../../.gitbook/assets/image.png" alt="" data-size="line">) och välj **XRI Default Left Controller**. Gör samma sak för RightHand Controller, men där väljer du **XRI Default Right Controller**.
+Expandera XR Origin och dess Camera Offset och markera LeftHand Controller. Klicka på "Select Preset" (<img src="../../.gitbook/assets/image (7).png" alt="" data-size="line">) och välj **XRI Default Left Controller**. Gör samma sak för RightHand Controller, men där väljer du **XRI Default Right Controller**.
 
 
 

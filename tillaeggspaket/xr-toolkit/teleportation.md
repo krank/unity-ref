@@ -34,7 +34,7 @@ De här instruktionerna kommer att använda två fördefinierade InputActions so
 
 Normalt anropas Mode Activate av att spelaren drar styrspaken på VR-handkontrollen framåt, och Select anropas av att spelaren släpper styrspaken.
 
-![](<../../.gitbook/assets/image (7).png>)
+![](<../../.gitbook/assets/image (7) (2).png>)
 
 ### XR-controllers
 

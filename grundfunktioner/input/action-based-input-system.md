@@ -90,7 +90,7 @@ Control Schemes är sätt att gruppera och filtrera bindings i en InputAction as
 
 ### InputAction assets i kod
 
-Lägg till en InputActionAsset-variabel och gör så att den [syns i inspectorn](../../datatyper-och-synlighet.md#synlighet). Använd Unitys gränssnitt för att välja vilken asset som ska användas av scriptet.
+Lägg till en InputActionAsset-variabel och gör så att den [syns i inspectorn](../datatyper-och-synlighet.md#synlighet). Använd Unitys gränssnitt för att välja vilken asset som ska användas av scriptet.
 
 Genom att anropa assetens Enable-metod så aktiveras den som helhet. Enskilda InputActions behöver inte aktiveras manuellt.
 
@@ -129,7 +129,7 @@ PlayerInput är en komponent för att enkelt knyta ihop en InputAction Asset med
 
 Om ingen Input Action Asset är vald, finns en knapp för att skapa en. Den som då skapas har tre Actions redan inlagda – Move, Look och Fire. Man kan enkelt lägga till flera, eller ta bort de man inte behöver, men det är i varje fall en ganska bra grund att utgå från.
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Default Scheme** och **Default Map** är det control scheme och den action map som används som standard. Ofta behöver man inte ändra på dem alls.
 

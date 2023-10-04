@@ -44,7 +44,7 @@ Gå till Unity, och vänta på att de nya paketen ska laddas in. Unity kommer at
 
 Unity kommer att fråga ifall du vill uppdatera dina XR InteractionLayer Masks. Välj **No thanks**.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Mixed Reality -> Project -> Apply recommended project settings for Hololens 2
 
@@ -71,7 +71,7 @@ Mixed Reality -> Project -> Apply recommended project settings for Hololens 2
 
 Sök i Assets efter prefaben **MRTK XR Rig**. Om du inte hittar den, se till så att din sökning är i **Packages**, inte i Assets. Lägg till en instans av den i scenen.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Sök också efter **MRTKInputSimulator**. Lägg till en instans av den också.
 

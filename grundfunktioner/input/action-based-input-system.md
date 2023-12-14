@@ -62,7 +62,7 @@ Används för att läsa av en InputActions värde. Datatypen anges mellan <>. Om
 
 ### Actions
 
-Varje InputAction har tre [delegatvariabler](http://127.0.0.1:5000/s/-MHmNgpRz-b16wpwGwZI-887967055/grundlaeggande/delegates) av typen [`Action`](https://krank23.gitbook.io/csharp-ref/grundlaeggande/delegates#h.p\_qt3arehin8yt)`<InputAction.CallbackContext>`. Delegaterna heter **started**, **canceled** och **performed**.
+Varje InputAction har tre [delegatvariabler](https://app.gitbook.com/s/-MHmNgpRz-b16wpwGwZI-887967055/grundlaeggande/delegates) av typen [`Action`](https://krank23.gitbook.io/csharp-ref/grundlaeggande/delegates#h.p\_qt3arehin8yt)`<InputAction.CallbackContext>`. Delegaterna heter **started**, **canceled** och **performed**.
 
 **Started** anropas normalt sett när input påbörjas och **canceled** när input avslutas, så de är lätta att använda för att koppla kod till när en knapp till exempel trycks ner (started) eller släpps upp (canceled). **Performed** är mer komplicerad och när den anropas beror på vilken sorts InputAction det rör sig om (Value eler Button t.ex).
 

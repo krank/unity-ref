@@ -31,7 +31,9 @@
 * [UI och Canvas\*](grundfunktioner/ui-och-canvas.md)
 * [Importera grafik\*](grundfunktioner/importera-grafik.md)
 * [Unity Events](grundfunktioner/unity-events.md)
-* [Animationer\*](grundfunktioner/animationer.md)
+* [Invoke, Couroutines](grundfunktioner/invoke-couroutines.md)
+* [Animationer\*](grundfunktioner/animationer/README.md)
+  * [AnimationController\*](grundfunktioner/animationer/animationcontroller.md)
 
 ## Andra funktioner
 

@@ -4,7 +4,7 @@
 
 ### Static
 
-Ett väldigt enkelt sätt att spara data så att den inte förstörs vid scenbyte är att lagra datan i en [statisk](http://127.0.0.1:5000/s/-MHmNgpRz-b16wpwGwZI-887967055/klasser-och-objektorientering/static) variabel.
+Ett väldigt enkelt sätt att spara data så att den inte förstörs vid scenbyte är att lagra datan i en [statisk](https://app.gitbook.com/s/-MHmNgpRz-b16wpwGwZI-887967055/klasser-och-objektorientering/static) variabel.
 
 ```csharp
 public class AvatarController : MonoBehaviour
@@ -92,7 +92,7 @@ name = PlayerPrefs.GetString("name");
 
 ### WriteAllText, WriteAllLines
 
-[Samma metoder som används i vanliga C#](http://127.0.0.1:5000/s/-MHmNgpRz-b16wpwGwZI-887967055/filhantering/laesa-och-skriva) för att läsa och skriva data fungerar precis likadant i Unity. Däremot bör man använda **Application.persistentDataPath** som första del av alla filnamn för att se till så filerna sparas i rätt mapp (spelets data-mapp).
+[Samma metoder som används i vanliga C#](https://app.gitbook.com/s/-MHmNgpRz-b16wpwGwZI-887967055/filhantering/laesa-och-skriva) för att läsa och skriva data fungerar precis likadant i Unity. Däremot bör man använda **Application.persistentDataPath** som första del av alla filnamn för att se till så filerna sparas i rätt mapp (spelets data-mapp).
 
 ```csharp
 string name = "Mira";
@@ -111,7 +111,7 @@ Där %userprofile% är din användares mapp (t.ex. C:\Users\Krank) och \<company
 
 ### JsonUtility
 
-Även om senare versioner av Dotnet har [inbyggda bibliotek](http://127.0.0.1:5000/s/-MHmNgpRz-b16wpwGwZI-887967055/filhantering/serialisering-.../json-serialisering) för att serialisera och deserialisera [JSON ](http://127.0.0.1:5000/s/-MHmNgpRz-b16wpwGwZI-887967055/filhantering/filformat/json)så saknas dessa i den version av Dotnet som ingår i Unity. Istället har Unity **JsonUtility**.
+Även om senare versioner av Dotnet har [inbyggda bibliotek](https://app.gitbook.com/s/-MHmNgpRz-b16wpwGwZI-887967055/filhantering/serialisering/json-serialisering) för att serialisera och deserialisera [JSON ](https://app.gitbook.com/s/-MHmNgpRz-b16wpwGwZI-887967055/filhantering/filformat/json)så saknas dessa i den version av Dotnet som ingår i Unity. Istället har Unity **JsonUtility**.
 
 För att förbereda en klass för serialisering med JsonUtility, markera den som \[System.Serializable].
 

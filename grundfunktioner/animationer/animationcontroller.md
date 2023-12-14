@@ -1,0 +1,4 @@
+# AnimationController\*
+
+* State machine
+* Transitions

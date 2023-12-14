@@ -11,7 +11,7 @@ Beroende på originalens filformat så skapar Unity någon form av "Asset" kring
 
 En texture2D är helt enkelt en bild. Hur bilden ska användas bestäms genom att man väljer "texture type" i inspectorn.
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 De vanligaste texturtyperna är:
 
@@ -21,7 +21,7 @@ De vanligaste texturtyperna är:
 ### Sprite
 
 {% hint style="info" %}
-**OBSERVERA:** I nyare versioner av Unity, eller i 3D-projekt, kan du behöva installera paketet "2D Sprite" via [Package manager](../andra-funktioner/package-manager.md) för att ha tillgång till Sprite editor-fönstret.
+**OBSERVERA:** I nyare versioner av Unity, eller i 3D-projekt, kan du behöva installera paketet "2D Sprite" via [Package manager](../../andra-funktioner/package-manager.md) för att ha tillgång till Sprite editor-fönstret.
 {% endhint %}
 
 För sprites finns tre "Sprite modes":
@@ -32,7 +32,7 @@ För sprites finns tre "Sprite modes":
 
 För att redigera rektanglarna eller polygonerna används **Sprite editor**-fönstret.
 
-Klicka på den här knappen för att öppna det fönstret: ![](<../.gitbook/assets/image (6).png>)
+Klicka på den här knappen för att öppna det fönstret: ![](<../../.gitbook/assets/image (6).png>)
 
 \[BILD HÄR: Single/Multiple/Polygon]
 

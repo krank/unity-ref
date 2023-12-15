@@ -63,3 +63,7 @@ Importen för bilder är anpassad för högupplösta texturer, vilket betyder at
 (Mer kommer…)
 
 ## 3D-modeller
+
+* fbx
+* obj
+* blend

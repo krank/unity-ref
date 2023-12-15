@@ -34,7 +34,8 @@
 * [Unity Events](grundfunktioner/unity-events.md)
 * [Invoke, Couroutines](grundfunktioner/invoke-couroutines.md)
 * [Animationer\*](grundfunktioner/animationer/README.md)
-  * [AnimationController\*](grundfunktioner/animationer/animationcontroller.md)
+  * [AnimationClip\*](grundfunktioner/animationer/animationclip.md)
+  * [Animator Controller\*](grundfunktioner/animationer/animator-controller.md)
 
 ## Andra funktioner
 

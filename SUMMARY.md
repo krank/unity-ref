@@ -43,6 +43,7 @@
 * [ProBuilder](andra-funktioner/probuilder.md)
 * [Asset Store](andra-funktioner/asset-store.md)
 * [Package manager](andra-funktioner/package-manager.md)
+* [Meddelanden](andra-funktioner/meddelanden.md)
 
 ## Tekniker
 

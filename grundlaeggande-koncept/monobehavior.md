@@ -10,7 +10,7 @@ MonoBehavior är den basklass som alla komponenter bygger på. Den innehåller e
 
 ## Händelse-metoder
 
-Det finns ett antal metoder som man kan lägga till i klasser som ärver från MonoBehavior, och som – om scriptet lagts till som komponent på ett spelobjekt – körs vid specifika tillfällen. Nedan är några exempel.
+Det finns ett antal metoder som man kan lägga till i klasser som ärver från MonoBehavior, och som – om scriptet lagts till som komponent på ett spelobjekt – körs vid specifika tillfällen. Nedan är några exempel, [men en komplett lista finns här](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html).
 
 ### Start()
 
@@ -42,6 +42,28 @@ Körs en gång varje gång fysikdelen av Unity kör en av sina loopar. Normalt s
 void Update()
 {
   Debug.Log("Ny bildruta, yay!");
+}
+```
+
+### OnBecameVisible()
+
+Anropas när en renderer på spelobjektet blir synlig – när någon del av dess bounds hamnar innanför skärmen.
+
+```csharp
+private void OnBecameVisible()
+{
+  print("I'm visible!");
+}
+```
+
+### OnBecameInvisible()
+
+Anropas när en renderer på spelobjektet blir osynlig – när ingen del av dess bounds hamnar innanför skärmen.
+
+```csharp
+private void OnBecameInvisible()
+{
+  Destroy(this.GameObject)
 }
 ```
 

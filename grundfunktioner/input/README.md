@@ -35,3 +35,25 @@ private void OnMouseUp()
     print("hey");
 }
 ```
+
+### Cursor.lockState
+
+Låter dig begränsa muspelarens rörelser. lockState kan ha tre olika värden:
+
+* `CursorLockMode.Locked` – pekaren är helt fast
+* `CursorLockMode.Confined` – pekaren kan inte lämna fönstret
+* `CursorLockMode.None` – pekaren begränsas inte.
+
+Exempel:
+
+```csharp
+Cursor.lockState = CursorLockMode.Locked;
+```
+
+### Cursor.visible
+
+Bestämmer ifall muspekaren ska vara synlig.
+
+```csharp
+Cursor.visible = false;
+```

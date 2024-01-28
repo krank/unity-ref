@@ -27,7 +27,8 @@
 * [Hitta spelobjekt](grundfunktioner/hitta-spelobjekt.md)
 * [Beständig data](grundfunktioner/bestaendig-data.md)
 * [Slump](grundfunktioner/slump.md)
-* [Fysik (2D och 3D)](grundfunktioner/fysik-2d-och-3d.md)
+* [Fysik (2D och 3D)](grundfunktioner/fysik-2d-och-3d/README.md)
+  * [Raycasting\*](grundfunktioner/fysik-2d-och-3d/raycasting.md)
 * [UI och Canvas\*](grundfunktioner/ui-och-canvas.md)
 * [Importera grafik\*](grundfunktioner/importera-grafik/README.md)
   * [Sprite editor\*](grundfunktioner/importera-grafik/sprite-editor.md)
@@ -45,6 +46,7 @@
 * [Package manager](andra-funktioner/package-manager.md)
 * [Meddelanden](andra-funktioner/meddelanden.md)
 * [CharacterController](andra-funktioner/charactercontroller.md)
+* [AI-Navmesh\*](andra-funktioner/ai-navmesh.md)
 
 ## Tekniker
 

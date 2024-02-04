@@ -4,7 +4,7 @@ ProBuilder gör att man kan bygga enkel 3D-geometri snabbt direkt i Unity-editor
 
 ## Komma igång
 
-* Använd [Package Manager](package-manager.md) för att lägga till **ProBuilder** från Unity Registry.
+* Använd [Package Manager](../andra-funktioner/package-manager.md) för att lägga till **ProBuilder** från Unity Registry.
 * Skapa en ny **ProBuilder Cube**, eller lägg till en ProBuilder MeshFilter-komponent till ett existerande projekt.
 * Klicka på **Open ProBuilder** i ProBuilder MeshFilter-komponenten.
 

@@ -41,24 +41,18 @@
 ## Andra funktioner
 
 * [Tilemaps\*](andra-funktioner/tilemaps.md)
-* [ProBuilder](andra-funktioner/probuilder.md)
 * [Asset Store](andra-funktioner/asset-store.md)
 * [Package manager](andra-funktioner/package-manager.md)
 * [Meddelanden](andra-funktioner/meddelanden.md)
 * [CharacterController](andra-funktioner/charactercontroller.md)
-* [AI-Navmesh\*](andra-funktioner/ai-navmesh.md)
-
-## Tekniker
-
-* [Påverka andra objekt\*](tekniker/paverka-andra-objekt.md)
-* [Rutnät\*](tekniker/rutnaet.md)
 
 ## Tilläggspaket
 
+* [AI-Navmesh\*](tillaeggspaket/ai-navmesh.md)
 * [Mirror (nätverk)](tillaeggspaket/mirror-naetverk.md)
 * [XR Toolkit](tillaeggspaket/xr-toolkit/README.md)
   * [Controllers](tillaeggspaket/xr-toolkit/controllers.md)
-  * [Interaktion](tillaeggspaket/xr-toolkit/interaktion.md)
+  * [Interaktion\*](tillaeggspaket/xr-toolkit/interaktion.md)
   * [Device Simulator](tillaeggspaket/xr-toolkit/device-simulator.md)
   * [Teleportation](tillaeggspaket/xr-toolkit/teleportation.md)
   * [Oculus/Meta Quest 2](tillaeggspaket/xr-toolkit/oculus-meta-quest-2.md)
@@ -71,3 +65,9 @@
   * [Spatial awareness\*](tillaeggspaket/mrtk-hololens/spatial-awareness.md)
   * [Röststyrning\*](tillaeggspaket/mrtk-hololens/roeststyrning.md)
   * [Deployment\*](tillaeggspaket/mrtk-hololens/deployment.md)
+* [ProBuilder](tillaeggspaket/probuilder.md)
+
+## Tekniker
+
+* [Påverka andra objekt\*](tekniker/paverka-andra-objekt.md)
+* [Rutnät\*](tekniker/rutnaet.md)

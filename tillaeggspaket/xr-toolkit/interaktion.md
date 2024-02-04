@@ -1,8 +1,8 @@
 ---
-description: UNDER UPPDATERING // Micke, 2023-09-19
+description: UNDER UPPDATERING // Micke, 2024-02-04
 ---
 
-# Interaktion
+# Interaktion\*
 
 I VR-sammanhang är "interaktion" specifikt när VR-utrustningen interagerar med den virtuella miljön. Till exempel är en VR-handkontroll används för att plocka upp något eller trycka på en knapp.
 

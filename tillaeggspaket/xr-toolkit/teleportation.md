@@ -51,8 +51,15 @@ I objektets XR Controller, tryck på Preset-knappen (![](<../../.gitbook/assets/
 Gör följande ändringar:
 
 * Byt ut **Select Action** till **XRI LeftHand Locomotion/Teleport Select** (![](<../../.gitbook/assets/image (23).png>) för att få fram listan).
-* Kryssa ur **Enable Input Tracking**. Objektet kommer redan att flyttas genom att det ligger under den vanliga LeftHand-controllern.
+*   Kryssa ur **Enable Input Tracking**. Objektet kommer redan att flyttas genom att det ligger under den vanliga LeftHand-controllern.
+
+
+
+    <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 * Kryssa ur **Use Reference** för **Rotate Anchor Action** och **Translate Anchor Action**. Den här interactorn ska inte vrida och vända på objekt den interagerar med.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
 * Se till så **Model Prefab** är tom.
 * Skapa och lägg till **RayToggler**-scriptet (se nedan), och dra in **XRI LeftHand Locomotion/Teleport Mode Activate** till dess Input Action-referens.
 

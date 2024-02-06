@@ -20,15 +20,15 @@ Objekt som har en interactor-komponent kan sedan påverka dessa interactible-obj
 
 _Exempel: Man vill kunna trycka på en knapp med sin VR-handkontroll. Knappen behöver då en interactible-komponent och VR-handkontrollen behöver en interactor-komponent._
 
-## Interactors
+## Interactors\*
 
 Det finns tre huvudsakliga interactors:
 
-* XR Ray Interactor –&#x20;
-* XR Direct Interactor –&#x20;
-* XR Poke Interactor –&#x20;
+* **XR Ray Interactor** – En stråle som normalt utgår från VR-handkontrollen och gör att man kan interagera med det strålen träffar.
+* **XR Direct Interactor** – Använder en collider och gör att man kan interagera med det collidern rör vid.
+* **XR Poke Interactor** – Gör att man kan interagera med objekt, och med UI-element, genom att "peta" på dem.
 
-XR-controllers kan ha tre olika typer av interaktion: **ray interaction** och **direct interaction**. Varje handkontrolls-objekt kan normalt bara ha komponenter för en av dem, så om man vill kombinera behövs en workaround – se [teleportation ](teleportation.md)för ett exempel.
+Man kan bara ha en av dem på varje XR-controller, så om man vill använda flera – se [teleportation](teleportation.md) till exempel – får man hitta en workaround av något slag. Oftast sker det genom att man har flera under-objekt som var och ett har en egen interactor. Så är det t.ex. löst i **XR Origin (XR Rig)**-prefaben.
 
 Objekten som motsvarar dina VR-handkontroller finns i din XR Origin, under Camera Offset.
 
@@ -44,9 +44,11 @@ När XR Origin-objektet skapas så ges båda VR-handkontrollerna de komponenter 
 
 ### Direct interaction
 
-Vid direct interaction måste VR-handkontrollen fysiskt röra vid målobjektet för att interaktion ska kunna se. Då kan man inte interagera med saker på distans utan måste vara nära dem.
+Vid direct interaction måste VR-handkontrollen (eller den collider som är på samma objekt som Direct Interactor-scriptet) fysiskt röra vid målobjektet för att interaktion ska kunna se. Då kan man inte interagera med saker på distans utan måste vara nära dem.
 
 Lägg till en **XR Direct Interactor**-komponent till det VR-handkontroll-objektet som ska använda direct interaction. Lägg också till en Sphere Collider (Trigger); den kommer att användas för att känna av kollisionen mellan interactorn och objekten.
+
+### Poke interaction\*
 
 ### Interaction layer mask
 
@@ -60,7 +62,7 @@ Precis som med vanliga lager används Add Layer för att skapa nya lager. Se til
 
 ### Interactors och kod
 
-Oavsett vilken typ av interactor som används så kan man användas kod för att till exempel läsa av vilket eller vilka objekt den hovrar över just nu:
+Oavsett vilken typ av interactor som används så kan man använda kod för att till exempel läsa av vilket eller vilka objekt den hovrar över just nu:
 
 ```csharp
 public class ControllerController : MonoBehaviour
@@ -83,7 +85,7 @@ public class ControllerController : MonoBehaviour
 }
 ```
 
-## Föremål som kan interageras med
+## Interactables – föremål som kan interageras med
 
 För att göra så att ett objekt kan interageras med, behöver det en Interactable-komponent. Det finns flera olika.
 
@@ -103,7 +105,7 @@ I listan är det mesta ganska självförklarande, men det finns tre viktiga begr
 
 * **Hover** betyder att spelaren markerat objektet med en stråle (ray interactor) eller en VR-handkontroll (direct interactor).
 * **Select** betyder att spelaren tryckt på **grepp-knappen** på sin VR-handkontroll. Man kan ändra vilken knapp som gör "select" om man vill.
-* **Activate** betyder att spelaren tryckt på **trigger-knappen** på sin VR-handkontroll. Man kan ändra vilken knapp som gör "activate" om man vill. OBS: För att Activate ska ske måste Grab ha skett först
+* **Activate** betyder att spelaren tryckt på **trigger-knappen** på sin VR-handkontroll. Man kan ändra vilken knapp som gör "activate" om man vill. OBS: För att Activate ska ske måste Grab ha skett först.
 
 I exemplet nedan aktiveras metoden **DoSomething** i **CapsuleController**-scriptet som finns i objektet **Capsule** när spelaren **markerat** objektet med antingen sin stråle (ray interactor) eller sin VR-handkontroll (direct interactor)
 

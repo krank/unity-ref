@@ -12,7 +12,7 @@ Används för att skriva ut saker till konsollen; motsvarande Console.WriteLine 
 Debug.Log($"Current X: {transform.position.x}");
 ```
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (2).png>)
 
 Används ofta för att testa ifall kod överhuvudtaget körs eller för att se vilket värde olika variabler har.
 
@@ -24,7 +24,7 @@ Ritar ut en linje i scenvyn. Tar emot två vektorer som startposition och slutpo
 Debug.DrawLine(Vector2.right, Vector2.down, Color.green);
 ```
 
-![](<../.gitbook/assets/image (1).png>)
+![](<../.gitbook/assets/image (1) (1).png>)
 
 ## Gizmos
 
@@ -62,7 +62,7 @@ void OnDrawGizmos()
 }
 ```
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (2) (1).png>)
 
 ### DrawLineList()
 

@@ -44,7 +44,7 @@ Gå till Unity, och vänta på att de nya paketen ska laddas in. Unity kommer at
 
 Unity kommer att fråga ifall du vill uppdatera dina XR InteractionLayer Masks. Välj **No thanks**.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Mixed Reality -> Project -> Apply recommended project settings for Hololens 2
 

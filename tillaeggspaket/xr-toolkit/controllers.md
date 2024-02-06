@@ -1,12 +1,12 @@
 # Controllers
 
-## Prefab
+## Prefab (utseende)
 
-Om du använder "Complete XR Origin Set Up" så syns dina kontroller som ett par generiska vita 3d-modeller i VR-rymden. Oavsett vilket kan du välja egna 3d-modeller att använda.
+Om du använder XR Origin-prefaben så syns dina kontroller som ett par generiska vita 3d-modeller i VR-rymden. Oavsett vilket kan du välja egna 3d-modeller att använda.
 
 Expandera XR Origin och Camera Offset, och markera LeftHand Controller (eller RightHand Controller). Scrolla ner till "Model prefab". Lägg in den modell du vill använda.
 
-De generiska vita 3d-modellerna finns under Assets → Samples → XR Interaction Toolkit → 2.4.3 → Starter Assets → Prefabs → XR Origin Pieces.
+De generiska vita 3d-modellerna finns under Assets → Samples → XR Interaction Toolkit → 2.4.3 → Starter Assets → Prefabs → Controllers.
 
 ## Kod
 

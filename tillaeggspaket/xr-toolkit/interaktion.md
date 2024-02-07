@@ -20,6 +20,16 @@ Objekt som har en interactor-komponent kan sedan påverka dessa interactible-obj
 
 _Exempel: Man vill kunna trycka på en knapp med sin VR-handkontroll. Knappen behöver då en interactible-komponent och VR-handkontrollen behöver en interactor-komponent._
 
+### Interaction layer mask
+
+Oavsett om det gäller ray interaction eller direct interaction kan **interaction layers** användas för att bestämma vilka objekt som ska kunna interageras med. Interaction layers fungrar ungefär som vanliga [lager](../../grundlaeggande-koncept/lager-och-taggar.md).&#x20;
+
+Både XR Ray Interactor och XR Direct Interactor-komponenterna har en **Layer Interaction Mask**-variabel.
+
+![](<../../.gitbook/assets/image (17) (1).png>)
+
+Precis som med vanliga lager används Add Layer för att skapa nya lager. Se till så att bara de lager just denna interactor ska kunna interagera med är förkryssade. Detta blir extra viktigt om du vill ha olika sorters interactors för [teleportation ](teleportation.md)och att plocka upp föremål. Om du använder prefab-versionen av XR-riggen så utgår den från att lager 31 är "teleportationslagret".
+
 ## Interactors\*
 
 Det finns tre huvudsakliga interactors:
@@ -49,16 +59,6 @@ Vid direct interaction måste VR-handkontrollen (eller den collider som är på 
 Lägg till en **XR Direct Interactor**-komponent till det VR-handkontroll-objektet som ska använda direct interaction. Lägg också till en Sphere Collider (Trigger); den kommer att användas för att känna av kollisionen mellan interactorn och objekten.
 
 ### Poke interaction\*
-
-### Interaction layer mask
-
-Oavsett om det gäller ray interaction eller direct interaction kan **interaction layers** användas för att bestämma vilka objekt som ska kunna interageras med. Interaction layers fungrar ungefär som vanliga [lager](../../grundlaeggande-koncept/lager-och-taggar.md).&#x20;
-
-Både XR Ray Interactor och XR Direct Interactor-komponenterna har en **Layer Interaction Mask**-variabel.
-
-![](<../../.gitbook/assets/image (17) (1).png>)
-
-Precis som med vanliga lager används Add Layer för att skapa nya lager. Se till så att bara de lager just denna interactor ska kunna interagera med är förkryssade. Detta blir extra viktigt om du vill ha olika sorters interactors för [teleportation ](teleportation.md)och att plocka upp föremål.
 
 ### Interactors och kod
 

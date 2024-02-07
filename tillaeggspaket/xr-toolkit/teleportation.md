@@ -18,7 +18,7 @@ Objekt med en **Teleport Anchor**-komponent låter spelaren teleporteras till ob
 
 De har ett antal viktiga inställningar gemensamma:
 
-* **Interaction Layer Mask:** För att skilja teleportation från andra typer av interaktion kan det vara praktiskt att ge teleportations-mål ett eget Interaction Layer och se till så att de enbart finns på detta lager.
+* **Interaction Layer Mask:** För att skilja teleportation från andra typer av interaktion kan det vara praktiskt att ge teleportations-mål ett eget Interaction Layer och se till så att de enbart finns på detta lager. **Om du använder den färdiga prefaben för din XR Rig så utgår dess XR controllers från att lager 31 är teleportationslagret.**
 * **Custom Reticle:** Ett objekt som skapas när spelaren markerar objektet och placeras där hen planeras dyka upp efter teleportationen.
 * **Teleportation Configuration** är en liten undermeny – den viktigaste här är nog Teleport Trigger, som är den händelse som får teleportationen att utföras. Här kan man bara välja mellan Select (greppknapp) och Activate (avtryckare).
 

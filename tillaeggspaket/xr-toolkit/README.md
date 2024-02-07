@@ -27,17 +27,25 @@ Du kan nu också få en varning om att "XR InteractionLayerMask Update Required"
 
 Under "XR Interaction Toolkit" finns flera "Samples". Lägg till (importera) **Starter Assets**. **XR Device Simulator** lägger du till [om du tänker utveckla utan tillgång till ett VR-headset](device-simulator.md).
 
-### Scen-setup
+### Enkel scen-setup
 
 Ta bort din Main Camera från scenen.
 
-Sök i Project, Packages efter "xr origin" och dra ut en instans av **XR Origin (XR Rig)** till scenen.
+Sök i Assets efter "xr origin" och dra ut en instans av **XR Origin (XR Rig)** till scenen. Den prefaben finns annars i mappen Samples→XR Interaction Toolkit→\[version]→Starter Assets→Prefabs. Fördelen med att använda denna prefab är att man får med nästan allt man behöver direkt från början. Nackdelen är att man kanske inte gillar hur det fungerar…
 
 Den kommer att fungera som mittpunkten som VR-trackingen utgår från. Placera den där du vill att spelaren ska börja, och tänk att den ligger på golvet mellan spelarens ben.
 
 Lägg till en **Input Action Manager**-komponent till XR Origin-objektet i scenen. Lägg till **XRI Default Actions** till dess lista.
 
 Lägg in en **XR Interaction Manager** i scenen (Högerklicka i hierarkin, XR → Interaction Manager).
+
+{% hint style="info" %}
+**OBSERVERA:** I prefab-versionen av XR Origin (XR Rig) används interaction layers för att skilja områden man ska kunna teleportera till från sådana man inte ska kunna teleportera till.
+
+För att det ska fungera **måste interaction layer nummer 31 finnas och vara namngivet**. Eller så får man manuellt gå in och ändra vilket lager som ska användas.
+
+Gå till valfri XR Interactor, till exempel den i XR Origin (XR Rig)→Camera Offset→Left Controller→Teleport Interactor. Leta rätt på "Interactor Layer Mask". Klicka på den och välj "Add layer…". I listan, ge lager 31 ett namn.
+{% endhint %}
 
 ## Manuell scen-setup
 

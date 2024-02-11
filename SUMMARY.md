@@ -60,7 +60,7 @@
 * [MRTK (HoloLens 2)](tillaeggspaket/mrtk-hololens/README.md)
   * [Grundkoncept\*](tillaeggspaket/mrtk-hololens/grundkoncept.md)
   * [Simulering](tillaeggspaket/mrtk-hololens/simulering.md)
-  * [Konfigurering](tillaeggspaket/mrtk-hololens/konfigurering.md)
+  * [Konfigurering\*](tillaeggspaket/mrtk-hololens/konfigurering.md)
   * [Interaktion](tillaeggspaket/mrtk-hololens/interaktion.md)
   * [Spatial awareness\*](tillaeggspaket/mrtk-hololens/spatial-awareness.md)
   * [Röststyrning\*](tillaeggspaket/mrtk-hololens/roeststyrning.md)

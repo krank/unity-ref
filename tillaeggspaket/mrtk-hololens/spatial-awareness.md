@@ -1,7 +1,7 @@
 # Spatial awareness\*
 
 * MRTK XR Rig -> Camera Offset
-  * Skapa objekt med "ARSpatialMeshManager"-komponent
+  * Skapa objekt med "ARMeshManager"-komponent
   * Skapa en prefab med ett MeshFilter och rätt material
     * (Exakta mesh:et kommer att ersättas av det som byggs upp)
 * Simulering
@@ -12,9 +12,9 @@
     * Install sample environments
     * Import sample environments
 
+{% embed url="https://localjoost.github.io/Using-ARMeshManager-for-Spatial-Awareness-with-MRTK3-on-HoloLens-2/" %}
 
-
-
+{% embed url="https://localjoost.github.io/MRTK3-StatefulInteractable-gaze,-hover-and-select-events-and-how-to-use-them/" %}
 
 OLD:
 

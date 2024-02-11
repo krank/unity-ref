@@ -46,7 +46,7 @@ Unity kommer att fråga ifall du vill uppdatera dina XR InteractionLayer Masks. 
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Mixed Reality -> Project -> Apply recommended project settings for Hololens 2
+~~Mixed Reality -> Project -> Apply recommended project settings for Hololens 2~~
 
 * Project Settings
   * MRTK3

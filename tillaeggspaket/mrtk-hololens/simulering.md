@@ -23,8 +23,8 @@ För att styra händerna:
 
 
 
-## Diagnostics
+## ~~Diagnostics~~
 
-Den stora rutan som visar CPU-användning och annat praktiskt kan vara lite irriterande.
+~~Den stora rutan som visar CPU-användning och annat praktiskt kan vara lite irriterande.~~
 
-Om du skapat en Configuration Profile för ditt MixedRealityToolkit-objekt så kan du gå till **Diagnostics** och kryssa ur **"Enable Diagnostics System"**.
+~~Om du skapat en Configuration Profile för ditt MixedRealityToolkit-objekt så kan du gå till **Diagnostics** och kryssa ur **"Enable Diagnostics System"**.~~

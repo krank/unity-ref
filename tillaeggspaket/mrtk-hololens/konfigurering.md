@@ -1,8 +1,8 @@
-# Konfigurering
+# Konfigurering\*
 
-Det finns väldigt många inställningar som kan göras i MRTK, och de är ordnade i olika konfigurerings-filer. De filerna hänvisar sedan till varandra: En stor övergripande Configuration Profile innehåller information om till exempel vilken Camera Profile som ska användas.
+~~Det finns väldigt många inställningar som kan göras i MRTK, och de är ordnade i olika konfigurerings-filer. De filerna hänvisar sedan till varandra: En stor övergripande Configuration Profile innehåller information om till exempel vilken Camera Profile som ska användas.~~
 
-Normalt sett används standardprofiler som inte kan ändras, så för varje profil som något ska ändras i måste en klon skapas och väljas.
+~~Normalt sett används standardprofiler som inte kan ändras, så för varje profil som något ska ändras i måste en klon skapas och väljas.~~
 
 ## Configuration Profile
 

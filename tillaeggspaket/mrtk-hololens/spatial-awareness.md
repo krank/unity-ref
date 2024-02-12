@@ -4,7 +4,7 @@
   * Skapa objekt med "ARMeshManager"-komponent
   * Skapa en prefab med ett MeshFilter och rätt material
     * (Exakta mesh:et kommer att ersättas av det som byggs upp)
-* Simulering
+* Simulering (Inte fått detta att funka ännu)
   * Edit->Project Settings
     * XR Plug-in Management->Windows, Mac & Linux
       * Kryssa i XR Simulation
@@ -16,7 +16,7 @@
 
 {% embed url="https://localjoost.github.io/MRTK3-StatefulInteractable-gaze,-hover-and-select-events-and-how-to-use-them/" %}
 
-OLD:
+OLD MRTK2:
 
 * MixedRealityToolkit
   * Spatial Awareness

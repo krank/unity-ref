@@ -8,7 +8,7 @@ Objekt med en Object Manipulator-komponent får också automatiskt en Constraint
 
 I Object Manipulator-komponenten finns inställningar för en- och tvåhandsmanipulation och till exempel smoothing (som får objektet att röra sig mjukt när det manipuleras).
 
-För att skapa ett objekt som bara kan interageras med på nära håll – ändra i listan "Allowed Interaction Types".
+För att skapa ett objekt som bara kan interageras med på nära håll – ändra i listan **Allowed Interaction Types**.
 
 Det finns också **Unity Events** för när manipulationen börjar och slutar (On Manipulation Started/Ended) samt för när spelaren börjar/slutar markera objektet med sin pekare (On Hover Started/Exited).
 
@@ -20,7 +20,10 @@ Det finns också **Unity Events** för när manipulationen börjar och slutar (O
 
 Komponent som ger ett objekt enkel interagerbarhet.
 
-* **Selection mode** \[Button|Toggle|One-way toggle] avgör ifall objektet ska funka som en vanlig knapp (man klickar och något händer) eller mer som en av/på-knapp.
+* **Selection mode** \[Button|Toggle|One-way toggle] avgör hur objektet ska fungera.
+  * Button: En vanlig knapp. man klickar, något händer.
+  * Toggle: En av/på-knapp som minns vilket "läge" den är i.
+  * One-way toggle: Som toggle, men bara åt ett håll.
 
 Listan "On Clicked" är händelser som sker (metoder som körs) när man klickar på knappen. "On Toggled" och "On Untoggled" dyker upp om man väljer att det ska vara en toggle-knapp, och gör så att olika metoder kan köras när man klickar, när den hamnar i "på"-läge och när den hamnar i "av"-läge.
 

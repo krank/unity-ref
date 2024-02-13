@@ -61,9 +61,10 @@
   * [Grundkoncept\*](tillaeggspaket/mrtk-hololens/grundkoncept.md)
   * [Simulering](tillaeggspaket/mrtk-hololens/simulering.md)
   * [Konfigurering\*](tillaeggspaket/mrtk-hololens/konfigurering.md)
-  * [Interaktion](tillaeggspaket/mrtk-hololens/interaktion.md)
+  * [Interaktion\*](tillaeggspaket/mrtk-hololens/interaktion.md)
   * [Spatial awareness\*](tillaeggspaket/mrtk-hololens/spatial-awareness.md)
   * [Röststyrning\*](tillaeggspaket/mrtk-hololens/roeststyrning.md)
+  * [UI/UX och Canvas\*](tillaeggspaket/mrtk-hololens/ui-ux-och-canvas.md)
   * [Deployment\*](tillaeggspaket/mrtk-hololens/deployment.md)
 * [ProBuilder](tillaeggspaket/probuilder.md)
 

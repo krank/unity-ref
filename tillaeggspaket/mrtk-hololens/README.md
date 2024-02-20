@@ -1,7 +1,5 @@
 # MRTK3 (HoloLens 2)
 
-_Hela den här sektionen är under kraftig omarbetning pga stora uppdateringar i MRTK3._
-
 ## Färdigt grundprojekt
 
 Här finns färdiga projekt att utgå från, med all setup redan fixad. Välj projektet som matchar din Unity- och Hololensversion:
@@ -10,7 +8,7 @@ Här finns färdiga projekt att utgå från, med all setup redan fixad. Välj pr
 
 * [MRTK3\_BASE\_HL2\_2021](https://github.com/mikael-bergstrom-ntisthlm/MRTK3\_BASE\_HL2\_2021) (MRTK 3, Unity 2021.3.26)
 
-## Manuell setup (MRTK 3.x)
+## Manuell setup
 
 Skapa ett nytt 3D-projekt i Unity.
 
@@ -39,6 +37,17 @@ Gå till Unity, och vänta på att de nya paketen ska laddas in. Unity kommer at
 Unity kommer att fråga ifall du vill uppdatera dina XR InteractionLayer Masks. Välj **No thanks**.
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+### Gitignore
+
+Lägg till följande två rader till din gitignore:
+
+```gitignore
+# Hololens WSA test certificate
+/[Aa]ssets/WSATestCertificate.pfx
+```
+
+WSATestCertificate.pfx är en fil som skapas i samband med att man testar projektet mot en riktig Hololens, men bör inte laddas upp till t.ex. Github.
 
 ### Project settings
 

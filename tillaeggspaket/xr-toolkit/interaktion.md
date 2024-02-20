@@ -1,10 +1,8 @@
----
-description: UNDER UPPDATERING // Micke, 2024-02-04
----
-
 # Interaktion\*
 
 I VR-sammanhang är "interaktion" specifikt när VR-utrustningen interagerar med den virtuella miljön. Till exempel är en VR-handkontroll används för att plocka upp något eller trycka på en knapp.
+
+(Om man vill köra kod själv när spelaren trycker på en knapp – se [controllers](controllers.md))
 
 ## XR Interaction Manager
 
@@ -60,28 +58,31 @@ Lägg till en **XR Direct Interactor**-komponent till det VR-handkontroll-objekt
 
 ### Poke interaction\*
 
-### Interactors och kod
+## Interactors och kod
 
-Oavsett vilken typ av interactor som används så kan man använda kod för att till exempel läsa av vilket eller vilka objekt den hovrar över just nu:
+För att komma åt XR Toolkits klasser etc, lägg till detta bland dina using statements:
 
 ```csharp
-public class ControllerController : MonoBehaviour
+using UnityEngine.XR.Interaction.Toolkit;
+```
+
+### Komponentdatatyper
+
+Basklassen för alla interactors är **XRBaseInteractor**. De andra heter liknande saker – **XRDirectInteractor**, **XRRayInteractor** och **XRPokeInteractor**.
+
+```csharp
+XRBaseInteractor interactor = GetComponentInChildren<XRRayInteractor>();
+```
+
+### interactablesHovered
+
+En lista med de "hoverable" interactables som interactorn just nu hovrar över. Normalt brukar den listan bara innehålla noll eller en saker, men använd en foreach för säkerhets skull! Datatypen för de saker den innehåller är [interfacet ](https://app.gitbook.com/s/-MHmNgpRz-b16wpwGwZI-887967055/klasser-och-objektorientering/interface)IXRHoverInteractable.
+
+```csharp
+foreach (IXRHoverInteractable interactable in interactor.interactablesHovered)
 {
-  XRBaseInteractor interactor; // Basklassen för alla interactors
-
-  void Awake()
-  {
-    interactor = GetComponentInChildren<XRRayInteractor>();
-  }
-
-  void Update()
-  {
-    foreach (IXRHoverInteractable interactable in interactor.interactablesHovered)
-    {
-      // skriver ut namnet på objektet som hovras över
-      Debug.Log(interactable.transform.name);
-    }
-  }
+  // skriver ut namnet på objektet som hovras över
+  Debug.Log(interactable.transform.name);
 }
 ```
 

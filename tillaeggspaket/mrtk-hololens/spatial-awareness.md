@@ -3,7 +3,8 @@
 * MRTK XR Rig -> Camera Offset
   * Skapa objekt med "ARMeshManager"-komponent
   * Skapa en prefab med ett MeshFilter och rätt material
-    * (Exakta mesh:et kommer att ersättas av det som byggs upp)
+    * OBS: Ta bort specifika mesh:et i MeshFilter-delen! Annars kommer det att _redigeras permanent_.
+    * MeshCollider
 * Simulering (Inte fått detta att funka ännu)
   * Edit->Project Settings
     * XR Plug-in Management->Windows, Mac & Linux

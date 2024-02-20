@@ -1,4 +1,4 @@
-# MRTK (HoloLens 2)\*
+# MRTK3 (HoloLens 2)
 
 _Hela den här sektionen är under kraftig omarbetning pga stora uppdateringar i MRTK3._
 
@@ -9,16 +9,8 @@ Här finns färdiga projekt att utgå från, med all setup redan fixad. Välj pr
 **Hololens 2:**
 
 * [MRTK3\_BASE\_HL2\_2021](https://github.com/mikael-bergstrom-ntisthlm/MRTK3\_BASE\_HL2\_2021) (MRTK 3, Unity 2021.3.26)
-* [~~MRTK\_BASE\_HL2\_2020~~](https://github.com/mikael-bergstrom-ntisthlm/MRTK\_BASE\_HL2\_2020) ~~(MRTK 2.x, Unity 2020)~~
-
-~~**Hololens 1 (ej uppdaterade):**~~
-
-* [~~Unity 2020.3.23~~](https://github.com/mikael-bergstrom-ntisthlm/MRTK-base-2020) ~~(MRTK 2.7.2, OpenXR)~~
-* [~~Unity 2019.4.32~~](https://github.com/mikael-bergstrom-ntisthlm/MRTK-base-2019) ~~(MRTK 2.7.2, Legacy XR)~~
 
 ## Manuell setup (MRTK 3.x)
-
-~~Installera~~ [~~UWP-modulen~~](../../kompilera-och-distribuera.md#uwp) ~~till Unity~~
 
 Skapa ett nytt 3D-projekt i Unity.
 
@@ -48,26 +40,30 @@ Unity kommer att fråga ifall du vill uppdatera dina XR InteractionLayer Masks. 
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-~~Mixed Reality -> Project -> Apply recommended project settings for Hololens 2~~
+### Project settings
 
-* Project Settings
-  * MRTK3
-    * Assign MRTK Default
-  * XR Plug-in management
-    * Windows, Mac, Linux
-      * OpenXR
-      * Windows Mixed Reality Feature Group
-    * UWP
-      * OpenXR
-      * Microsoft Hololens Feature Group
-    * OpenXR Project Validation
-      * Fix All för så många som möjligt
-      * Spatializer
-  * OpenXR
-    * Interaction Profile
-      * Eye Gaze Interaction Profile&#x20;
-      * Microsoft Hand Interaction Profile&#x20;
-      * Microsoft Motion Controller Profile
+Gå till Project settings.
+
+Under **MRTK3**, klicka på **Assign MRTK Default.**
+
+<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+
+Under **XR Plug-in Management** finns flikar för olika plattformar. Under fliken för "Windows, Mac, Linux settings", kryssa i:
+
+* Initialize XR on Startup
+* OpenXR
+* Windows Mixed Reality feature group
+
+Under fliken för "Universal Windows Platform settings" (om du har den), kryssa i:
+
+* OpenXR
+* Microsoft HoloLens feature group
+
+Under **Project Validation**, klicka "Fix all" under både "Windows, Mac, Linux settings" och "Universal Windows Platform settings" (om du har den).
+
+Under **OpenXR**, under "Enabled Interaction Profiles", lägg till "Eye Gaze Interaction Profile", "Microsoft Hand Interaction Profile" och "Microsoft Motion Controller Profile".
+
+<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
 ### Scen-setup
 
@@ -80,6 +76,9 @@ Sök också efter **MRTKInputSimulator**. Lägg till en instans av den också.
 ## Länkar
 
 * [https://docs.microsoft.com/en-us/learn/paths/beginner-hololens-2-tutorials/](https://docs.microsoft.com/en-us/learn/paths/beginner-hololens-2-tutorials/)
+
+### MRTK2 (gamla)
+
 * [https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/](https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/)
 * [https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/spatial-mapping-in-unity](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/spatial-mapping-in-unity?tabs=mrtk)
 * [https://docs.microsoft.com/en-us/windows/mixed-reality/design/scene-understanding](https://docs.microsoft.com/en-us/windows/mixed-reality/design/scene-understanding)

@@ -3,6 +3,7 @@
 * [Unity snabbreferens](README.md)
 * [Installation & setup](installation-and-setup.md)
 * [Kompilera och distribuera](kompilera-och-distribuera.md)
+* [Unity och git](unity-och-git.md)
 
 ## Grundläggande koncept
 

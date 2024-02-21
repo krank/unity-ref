@@ -9,7 +9,7 @@ Material:
 ## Förberedelser
 
 {% hint style="danger" %}
-**VIKTIGT:** Om projektet innehåller en [Device Simulator](device-simulator.md) – ta bort den eller deaktivera den! Om den är aktiv i scenen kommer ingenting att fungera när projektet körs i Oculusen.
+**VIKTIGT:** Om scenen innehåller en [Device Simulator](device-simulator.md) – ta bort den eller deaktivera den! Om den är aktiv i scenen kommer ingenting att fungera när projektet körs i Oculusen.
 {% endhint %}
 
 ### Oculus Quest 2
@@ -21,6 +21,10 @@ Gå till Settings->System->Developer. Aktivera USB Debugging.
 Koppla in headsetet via USB. Du bör få en dialogruta i headsetet som ber dig bekräfta att du vill ansluta via USB. Klicka "Allow".
 
 ### Unity build tools
+
+{% hint style="danger" %}
+**VIKTIGT:** Använd **Unity 2022** (eller senare) för detta! Det finns en bugg i 2021 som av någon anledning inte korrigerats. Buggen går ut på att Unity inte kan köra JDKn om den ligger i en mapp med en sökväg som innehåller mellanslag. Vem är det som lägger JDKn i en mapp med en sökväg som innehåller mellanslag? Unity.
+{% endhint %}
 
 Starta Unity Hub och gå till **Installs**.
 

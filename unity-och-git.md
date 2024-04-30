@@ -23,3 +23,9 @@ Unityprojekt fungerar egentligen precis som vanliga C#projekt. Öppnas de i Visu
 * Trryck på plusset till höger om "Changes" för att lägga till alla nya ändringar till din commit.
 * Tryck på Commit, och sedan Sync.
 
+**För projekt med stora filer (>100mb)**
+
+* Gå till projektet i Visual Studio Code.
+* Gå till terminalen
+* Skriv in kommandot `git lfs install` för att aktivera Git LFS (Large File System)
+* Skriv därefter in `git lfs track '*.fbx'` för att göra så att LFS sköter alla FBX-filer. Gör motsvarande för andra stora filtyper.

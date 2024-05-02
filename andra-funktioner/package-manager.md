@@ -1,6 +1,6 @@
 # Package manager
 
-Varje Unityprojekt består av ett antal olika moduler. En del av dem är frivilliga, och det finns väldigt många som kan läggas till i efterhand till exempel via [Asset Store](asset-store.md). Modulerna är packeterade som "paket" som kan läggas till eller tas bort från projekt.
+Varje Unityprojekt består av ett antal olika moduler. En del av dem är frivilliga, och det finns väldigt många som kan läggas till i efterhand till exempel via [Asset Store](asset-store/). Modulerna är packeterade som "paket" som kan läggas till eller tas bort från projekt.
 
 Det finns fyra listor med paket: Unity Registry, In Project, My Assets och Built-in.
 

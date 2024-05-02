@@ -1,6 +1,6 @@
 # Mirror (nätverk)
 
-Mirror är ett bibliotek av komponenter för att bygga multiplayerspel. Det finns gratis via Unitys [Asset Store](../andra-funktioner/asset-store.md).
+Mirror är ett bibliotek av komponenter för att bygga multiplayerspel. Det finns gratis via Unitys [Asset Store](../andra-funktioner/asset-store/).
 
 ### Den korta versionen
 

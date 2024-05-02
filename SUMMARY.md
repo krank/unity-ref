@@ -42,7 +42,8 @@
 ## Andra funktioner
 
 * [Tilemaps\*](andra-funktioner/tilemaps.md)
-* [Asset Store](andra-funktioner/asset-store.md)
+* [Asset Store](andra-funktioner/asset-store/README.md)
+  * [Användbara Assets](andra-funktioner/asset-store/anvaendbara-assets.md)
 * [Package manager](andra-funktioner/package-manager.md)
 * [Meddelanden](andra-funktioner/meddelanden.md)
 * [CharacterController](andra-funktioner/charactercontroller.md)

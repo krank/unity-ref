@@ -29,6 +29,7 @@ Kryssa i följande:
 * MRTK3
   * MRTK Input
   * MRTK UX Components
+  * MRTK Windows Speech
 
 Gå till Unity, och vänta på att de nya paketen ska laddas in. Unity kommer att fråga om editorn ska startas om och det nya input-systemet aktiveras. Tryck **Yes**.
 

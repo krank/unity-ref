@@ -9,17 +9,30 @@ För att kunna kompilera och föra över projekt till en HoloLens 2 eller emulat
 
 Dessutom behövs **Universal Windows Platform support** i Unity – **ytterligare c:a 2 gb**.
 
-* Build Settings -> Universal Windows Platform
-* Player Settings -> OpenXR -> UWP -> Interaction Profiles -> Microsoft Hand Interaction Profile
-* OpenXR Feature Groups -> Hand Tracking
+Windows måste också vara inställt till Developer Mode (Settings→System→For Developers)
+
+### Unity
+
+* Mixed Reality → Project Validation Settings → Hololens 2 Application (UWP)
+* Project Validation (XR Plug-in Management)
+  * "Fix all"
+  * "At least one interaction prodile must be added"
+    * Player Settings -> OpenXR -> UWP -> Interaction Profiles -> Microsoft Hand Interaction Profile
+  * "The speech interactor needs to be active and enabled"
+    * Aktivera MRTK Speech-komponenten i MRTK-riggen
+  * "For controller models to show up…"
+    * Ignorera, eller lägg till com.unity.cloud.gltfast via Package Manager
 * Build -> till egen mapp (skapa en!)
-* Windows: Developer Mode
+
+### Visual Studio
+
 * När processen är klar: Gå till mappen, öppna SLN-filen
-* Universal Windows-projektet -> Högerklick, Set as Startup Project
+* (Om det inte redan är fetmarkerat: Universal Windows-projektet -> Högerklick, Set as Startup Project)
 * Release, ARM64, Remote machine
 * Project -> Properties -> Debugging -> Machine Name (IP)
+  * (Om Hololensen är på och på samma nätverk bör man kunna anvönda Locate istf att skriva in IP-numret)
 * Build -> Deploy Solution
-* \~2min för att kompilera
+* \~2–6min för att kompilera (Snabbare efter första gången)
 * PIN
 * \~3-5min för att överföra
 

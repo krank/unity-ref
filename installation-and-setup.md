@@ -5,7 +5,7 @@
   * Följ instruktionerna – skapa ett Unity-konto om du inte redan har ett, skaffa en Unity-licens (välj gratislicensen)
   * **Windows:** Kan installeras via winget: `winget install Unity.UnityHub`
   * **MacOS:** Om du har [Brew ](https://brew.sh/)kan du installera via:`brew install --cask unity-hub`
-  * Via Unity Hub, **installera en version av Unity (minst 2021)**. Du kan **klicka ur alla valbara extragrejer**, framför allt Visual Studio.
+  * Via Unity Hub, **installera en version av Unity (minst 2022)**. Du kan **klicka ur alla valbara extragrejer**, framför allt Visual Studio.
   * Unity Hub  och Unity tar tillsammans upp c:a **5.5 gb**
 * **Ladda ner och installera** [**Visual Studio Code**](https://code.visualstudio.com/)**.**
   * I Code, installera följande extensions:
@@ -17,7 +17,7 @@
   * **Windows:** Kan installeras via winget: `winget install Microsoft.VisualStudioCode`
   * **MacOS:** Om du har [Brew ](https://brew.sh/)kan du installera via:`brew install --cask vscode`
   * Visual Studio Code inkl. extensions tar upp c:a **1gb**
-* **Ladda ner och installera** [**Dotnet 7 SDK**](https://dotnet.microsoft.com/en-us/download) **eller nyare**
+* **Ladda ner och installera** [**Dotnet 8 SDK**](https://dotnet.microsoft.com/en-us/download) **eller nyare**
   * Behövs av för att C# Dev Kit ska kunna bidra med automatkomplettering av kod.
   * **Windows:** Kan installeras via winget: `winget install Microsoft.DotNet.SDK.8`
   * **MacOS:** Om du har [Brew ](https://brew.sh/)kan du installera via:`brew install --cask dotnet-sdk`

@@ -49,7 +49,7 @@
 * [CharacterController](andra-funktioner/charactercontroller.md)
 * [Scriptable objects\*](andra-funktioner/scriptable-objects.md)
 
-## Tilläggspaket
+## Tilläggspaket <a href="#tillaeggspaket" id="tillaeggspaket"></a>
 
 * [AI-Navmesh\*](tillaeggspaket/ai-navmesh.md)
 * [Mirror (nätverk)](tillaeggspaket/mirror-naetverk.md)

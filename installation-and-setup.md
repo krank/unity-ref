@@ -1,12 +1,14 @@
 # Installation & setup
 
 * **Ladda ner och installera** [**Unity Hub**](https://unity3d.com/get-unity/download)**.**
+  * **Starta Unity Hub** och följ instruktionerna – skapa ett Unity-konto om du inte redan har ett, skaffa en Unity-licens (välj gratislicensen).
+  * När Unity Hub startar så får du frågan **om du vill installera Unity**. Du kan **tacka nej** till det, för den installationen inkluderar onödiga moduler som bara tar upp hårddiskutrymme.
+  * Via Unity Hub, **installera manuellt en version av Unity (minst 2022)**. Du kan **klicka ur alla valbara extragrejer**, framför allt Visual Studio.
+    * Om Visual Studio redan är installerat på datorn kan du inte kryssa ur det. Det är OK, du kan manuellt avinstallera Visual Studio senare.
+  * Unity Hub och Unity tar tillsammans upp c:a **5.5 gb**
   * **MacOS:** Scrolla ner till "Download the Unity Hub" och välj "Download for Mac"
-  * Följ instruktionerna – skapa ett Unity-konto om du inte redan har ett, skaffa en Unity-licens (välj gratislicensen)
-  * **Windows:** Kan installeras via winget: `winget install Unity.UnityHub`
   * **MacOS:** Om du har [Brew ](https://brew.sh/)kan du installera via:`brew install --cask unity-hub`
-  * Via Unity Hub, **installera en version av Unity (minst 2022)**. Du kan **klicka ur alla valbara extragrejer**, framför allt Visual Studio.
-  * Unity Hub  och Unity tar tillsammans upp c:a **5.5 gb**
+  * **Windows:** Kan installeras via winget: `winget install Unity.UnityHub`
 * **Ladda ner och installera** [**Visual Studio Code**](https://code.visualstudio.com/)**.**
   * I Code, installera följande extensions:
     * [C#](https://www.google.com/url?q=https%3A%2F%2Fmarketplace.visualstudio.com%2Fitems%3FitemName%3Dms-vscode.csharp\&sa=D\&sntz=1\&usg=AFQjCNGOzgSFj14Pbd9ut66JAvh0loJsEw) – Ger Visual Studio Code stöd för C#

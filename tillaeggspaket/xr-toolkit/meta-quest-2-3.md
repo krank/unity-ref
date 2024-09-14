@@ -3,8 +3,8 @@
 Material:
 
 * Dator med Unity
-  * För att testköra via kabel: c:a 4–500mb ledigt
-  * För att kompilera och installera i headset: c:a 2–3 gb ledigt
+  * För att testköra via kabel: c:a 4gb för att installera Oculus-appen
+  * För att kompilera och installera i headset: c:a 2–3 gb för att installera Android-utvecklingsverktygen
 * Meta Quest 2/3
 * USB-C-kabel
 

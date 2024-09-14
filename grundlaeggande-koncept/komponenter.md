@@ -34,7 +34,7 @@ void Start()
 
 ## TryGetComponent<>()
 
-Fungerar dels som GetComponent, men är mer säker – fungerar lite som [TryParse](https://app.gitbook.com/s/-MHmNgpRz-b16wpwGwZI-887967055/grundlaeggande/typkonvertering#int.tryparse). Med andra ord: Går det inte att hitta rätt komponent, så returneras false.
+Fungerar dels som GetComponent, men är mer säker – fungerar lite som [TryParse](https://app.gitbook.com/s/-MHmNgpRz-b16wpwGwZI-887967055/grundlaggande/typkonvertering#int.tryparse). Med andra ord: Går det inte att hitta rätt komponent, så returneras false.
 
 ```csharp
 void Start()

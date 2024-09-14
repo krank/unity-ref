@@ -1,29 +1,53 @@
-# Oculus/Meta Quest 2
+# Meta Quest 2/3
 
 Material:
 
-* Dator med Unity och 2+ gb ledigt utrymme
-* Oculus/Meta Quest 2
+* Dator med Unity
+  * För att testköra via kabel: c:a 4–500mb ledigt
+  * För att kompilera och installera i headset: c:a 2–3 gb ledigt
+* Meta Quest 2/3
 * USB-C-kabel
 
-## Förberedelser
+## Testköra på Meta Quest med kabel
+
+Oculus Link kan användas för att testköra VR-grejer direkt i headsetet utan att de behöver exporteras eller installeras. Link kan köras både trådat (med USB 3-kabel) och trådlöst (vilket kräver bra nätverk).
+
+### Förberedelser
+
+* Ladda ner och installera [Meta Quest Link](https://www.oculus.com/download\_app/?id=1582076955407037)-appen. (kräver c:a 400mb)
+  * Starta appen, gå igenom dess start-procedur.
+  * Inklusive att skapa eller logga in på ett Meta-konto.
+* Unity
+  * Se till så att du lagt till XR Plugin Management-paketet i [Package Manager](../../andra-funktioner/package-manager.md).
+  * I Project Settings, gå till XR Plugin Management, kryssa i Oculus under PC-fliken.
+
+### Kör
+
+* Skapa ett VR-projekt.
+* Ta bort XR Device Simulator ur scenen, eller stäng av den tillfälligt.
+* Koppla in headsetet med USB-kabel.&#x20;
+  * Du får nu troligen frågan om du vill aktivera Oculus Link. Svara ja.
+  * Om du inte får frågan, gå in i Oculus' snabbmeny (klicka där klockan och ikoner för nätverk etc är) och välj Oculus Link
+* Gå till Unity, testkör spelet med playknapen som vanligt.
+
+## Bygga/exportera till Oculus Quest
+
+### Förberedelser
 
 {% hint style="danger" %}
 **VIKTIGT:** Om scenen innehåller en [Device Simulator](device-simulator.md) – ta bort den eller deaktivera den! Om den är aktiv i scenen kommer ingenting att fungera när projektet körs i Oculusen.
 {% endhint %}
 
-### Oculus Quest 2
+#### Oculus Quest 2
 
-Starta headsetet.
+* Starta headsetet.
+* Gå till Settings->System->Developer. Aktivera USB Debugging.
+* Koppla in headsetet via USB. Du bör få en dialogruta i headsetet som ber dig bekräfta att du vill ansluta via USB. Klicka "Allow".
 
-Gå till Settings->System->Developer. Aktivera USB Debugging.
-
-Koppla in headsetet via USB. Du bör få en dialogruta i headsetet som ber dig bekräfta att du vill ansluta via USB. Klicka "Allow".
-
-### Unity build tools
+#### Unity build tools
 
 {% hint style="danger" %}
-**VIKTIGT:** Använd **Unity 2022** (eller senare) för detta! Det finns en bugg i 2021 som av någon anledning inte korrigerats. Buggen går ut på att Unity inte kan köra JDKn om den ligger i en mapp med en sökväg som innehåller mellanslag. Vem är det som lägger JDKn i en mapp med en sökväg som innehåller mellanslag? Unity.
+**VIKTIGT:** Använd **Unity 2022** (eller senare) för detta!
 {% endhint %}
 
 Starta Unity Hub och gå till **Installs**.
@@ -36,7 +60,7 @@ Kryssa i **Android Build Support**, och både **Android SDK & NDK Tools** samt *
 
 Öppna ett projekt och gå till Edit -> Preferences och klicka på External Tools. Dubbelkolla så att alla rutor under Android är ifyllda och att Unity därmed hittat alla verktyg.
 
-### Unity build settings
+#### Unity build settings
 
 Gå till File -> Build Settings. Välj Android som Platform. Glöm inte att trycka på Switch Platform.
 

@@ -1,10 +1,10 @@
 # XR Toolkit
 
-_Uppdaterat för XR Toolkit 2.5.2_
+_Uppdaterat för XR Toolkit 2.6.3_
 
 XR Toolkit är Unitys officiella sätt att arbeta med VR och liknande. Förhoppningsvis är det lite mer stabilt och långsiktigt än att köra med något fristående ramverk eller bibliotek, till exempel VRTK.
 
-_De här instruktionerna bör fungera i Unity 2020.3 och senare, men bör fungera även med lite tidigare versioner._
+_De här instruktionerna har testats i Unity 2022.3 men bör fungera även med lite tidigare versioner._
 
 **Termer**
 
@@ -15,10 +15,10 @@ _De här instruktionerna bör fungera i Unity 2020.3 och senare, men bör funger
 
 Utgå från ett vanligt 3D-projekt.
 
-Gå till [Package manager](../../andra-funktioner/package-manager.md) och installera paketen "XR Plugin Management" och "XR Interaction Toolkit" (version 2.5.2 eller nyare) från Unity Registry. Tacka ja ifall Unity frågar om du vill byta till det nya input-systemet.
+Gå till [Package manager](../../andra-funktioner/package-manager.md) och installera paketen "XR Plugin Management" och "XR Interaction Toolkit" (version 2.6.3 eller nyare) från Unity Registry. Tacka ja ifall Unity frågar om du vill byta till det nya input-systemet.
 
 {% hint style="info" %}
-Om XR Interaction Toolkit 2.5.2 inte finns i Unity Registry-listan, klicka på plustecknet uppe till höger, "Add package by name" och skriv in **com.unity.xr.interaction.toolkit** som name och **2.5.2** som version.
+Om XR Interaction Toolkit 2.6.3 inte finns i Unity Registry-listan, klicka på plustecknet uppe till höger, "Add package by name" och skriv in **com.unity.xr.interaction.toolkit** som name och **2.6.3** som version.
 {% endhint %}
 
 När du lägger till paketet kommer Unity att fråga om du vill aktivera det nya input-systemet. Tacka ja. Det kommer att innebära att Unity-editorn startas om.
@@ -35,7 +35,7 @@ Sök i Assets efter "xr origin" och dra ut en instans av **XR Origin (XR Rig)** 
 
 Den kommer att fungera som mittpunkten som VR-trackingen utgår från. Placera den där du vill att spelaren ska börja, och tänk att den ligger på golvet mellan spelarens ben.
 
-Lägg till en **Input Action Manager**-komponent till XR Origin-objektet i scenen. Lägg till **XRI Default Actions** till dess lista.
+Lägg till en **Input Action Manager**-komponent till XR Origin-objektet i scenen. Lägg till **XRI Default Input Actions** till dess lista.
 
 Lägg in en **XR Interaction Manager** i scenen (Högerklicka i hierarkin, XR → Interaction Manager).
 
@@ -46,6 +46,13 @@ För att det ska fungera **måste interaction layer nummer 31 finnas och vara na
 
 Gå till valfri XR Interactor, till exempel den i XR Origin (XR Rig)→Camera Offset→Left Controller→Teleport Interactor. Leta rätt på "Interactor Layer Mask". Klicka på den och välj "Add layer…". I listan, ge lager 31 ett namn.
 {% endhint %}
+
+## Rekommenderade justeringar
+
+XR Origin-riggen har ett par standardgrejer som kan upplevas som jobbiga eller opassande för många vana VR-användare – t.ex. har den inte bara teleportation inbyggd utan också åksjukekontroller (möjligheten att flytta sig i VR-världen genom att dra i vänster handkontrolls styrspak). Den har också strålar som utgår från båda handkontrollerna kontinuerligt och som kan användas för att interagera med saker i spelvärlden, där standard snarare är att man bara kan interagera med saker man kan röra vid.
+
+* För att stänga av åksjuke-kontrollerna: Gå in under **XR Origin (XR Rig) → Locomotion Systems** och ta bort eller stäng av child-objektet **Move**.
+* För att stänga av fjärrmanipulering: Gå in under **XR Origin (XR Rig) → Camera Offset → Left Controller** och plocka bort child-objektet **Ray Interactor.**
 
 ## Manuell scen-setup
 

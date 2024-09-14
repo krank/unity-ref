@@ -58,7 +58,7 @@
   * [Interaktion\*](tillaeggspaket/xr-toolkit/interaktion.md)
   * [Device Simulator](tillaeggspaket/xr-toolkit/device-simulator.md)
   * [Teleportation](tillaeggspaket/xr-toolkit/teleportation.md)
-  * [Oculus/Meta Quest 2](tillaeggspaket/xr-toolkit/oculus-meta-quest-2.md)
+  * [Meta Quest 2/3](tillaeggspaket/xr-toolkit/meta-quest-2-3.md)
   * [3D-modeller\*](tillaeggspaket/xr-toolkit/3d-modeller.md)
 * [MRTK3 (HoloLens 2)](tillaeggspaket/mrtk-hololens/README.md)
   * [Grundkoncept\*](tillaeggspaket/mrtk-hololens/grundkoncept.md)

@@ -68,6 +68,7 @@
   * [UI/UX och Canvas\*](tillaeggspaket/mrtk-hololens/ui-ux-och-canvas.md)
   * [Spatial awareness\*](tillaeggspaket/mrtk-hololens/spatial-awareness.md)
   * [Deployment\*](tillaeggspaket/mrtk-hololens/deployment.md)
+* [MRTK2 (Hololens 1)](tillaeggspaket/mrtk2-hololens-1.md)
 * [ProBuilder](tillaeggspaket/probuilder.md)
 
 ## Tekniker

@@ -6,6 +6,12 @@ Unity
 
 Mixed Reality Feature Tool
 
+## System-setup
+
+* Visual Studio
+  * Desktop development with C++
+* Windows 10 SDK: [https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
+
 ## Projekt-setup
 
 *

@@ -20,7 +20,7 @@ Unityprojekt fungerar egentligen precis som vanliga C#projekt. Öppnas de i Visu
 * Gå till projektet i Visual Studio Code.
 * Gå till Source Control.
 * Skriv något i rutan för Message.
-* Trryck på plusset till höger om "Changes" för att lägga till alla nya ändringar till din commit.
+* Tryck på plusset till höger om "Changes" för att lägga till alla nya ändringar till din commit.
 * Tryck på Commit, och sedan Sync.
 
 **För projekt med stora filer (>100mb)**

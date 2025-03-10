@@ -12,7 +12,7 @@ Unityprojekt fungerar egentligen precis som vanliga C#projekt. Öppnas de i Visu
 **En gång per projekt:**
 
 * Gå till projektet i Visual Studio Code, öppna kommando-palletten (F1 eller Fn+F1) och sök "add gitignore". Välj "Unity".
-* Gå till Source Control och väl Initialize Repository.
+* Gå till Source Control och välj Initialize Repository.
 * Publicera projektet på Github.
 
 **En gång per arbetstillfälle:**
